@@ -1,0 +1,175 @@
+<!--
+  PÁGINA MOODLE · COMIENZA AQUÍ · SUB-BLOQUE D — ACCESIBILIDAD Y ADAPTACIONES EN ESTE CURSO
+  Cómo usar: copia todo el contenido <style> + <div class="uv-page"> y pégalo
+  en el editor HTML de un recurso "Página" de Moodle, dentro del sub-bloque
+  D · Recursos y soporte. Reemplaza los marcadores {{ENTRE_LLAVES}} y
+  [texto entre corchetes] con el contenido real de tu curso.
+-->
+
+<meta charset="UTF-8">
+<style>
+  .uv-page { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: #1A1D20; line-height: 1.5; max-width: 1000px; margin: 0 auto; }
+  .uv-banner { background: #A32D2D; color: white; padding: 18px 24px; border-radius: 8px 8px 0 0; border-bottom: 4px solid #D4A017; }
+  .uv-banner .uv-kicker { font-size: 11px; letter-spacing: 1px; opacity: 0.85; text-transform: uppercase; margin-bottom: 6px; }
+  .uv-banner h1 { margin: 0; font-size: 24px; font-weight: 700; color: white; }
+  .uv-banner .uv-subtitle { margin-top: 6px; font-size: 14px; font-style: italic; opacity: 0.9; }
+  .uv-tag { display: inline-block; background: #D4A017; color: #1A1D20; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 4px; margin-bottom: 8px; }
+  .uv-section { margin: 24px 0; }
+  .uv-section h2 { color: #1A1D20; font-size: 18px; font-weight: 700; border-left: 4px solid #A32D2D; padding: 4px 0 4px 10px; margin-bottom: 12px; }
+  .uv-card { background: #F9FAFB; border-left: 4px solid #0F4C81; padding: 12px 16px; margin: 12px 0; border-radius: 0 6px 6px 0; }
+  .uv-card.uv-card-rojo { border-left-color: #A32D2D; background: #FFF1F2; }
+  .uv-card.uv-card-dorado { border-left-color: #D4A017; background: #FFF8E1; }
+  .uv-card.uv-card-verde { border-left-color: #1F7A3C; background: #E8F5E9; }
+  .uv-card h3 { margin: 0 0 6px 0; font-size: 14px; }
+  .uv-card.uv-card-rojo h3 { color: #A32D2D; }
+  .uv-card.uv-card-dorado h3 { color: #B8901C; }
+  .uv-card.uv-card-verde h3 { color: #1F7A3C; }
+  .uv-card p { margin: 4px 0; font-size: 14px; }
+  .uv-editable { background: #FFF8E1; border: 1px dashed #D4A017; padding: 2px 8px; border-radius: 3px; color: #B8901C; font-style: italic; }
+
+  .uv-feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 12px 0; }
+  .uv-feature { background: white; border: 1px solid #E5E7EB; border-radius: 8px; padding: 12px 14px; display: flex; gap: 10px; align-items: flex-start; }
+  .uv-feature-icon { flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; background: #E8F5E9; color: #1F7A3C; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; }
+  .uv-feature-title { font-weight: 700; font-size: 13px; margin-bottom: 2px; }
+  .uv-feature-desc { font-size: 12px; color: #4B5563; }
+
+  table.uv-table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+  table.uv-table th { background: #A32D2D; color: white; padding: 10px 12px; text-align: left; }
+  table.uv-table td { padding: 9px 12px; border-bottom: 1px solid #E5E7EB; vertical-align: top; }
+  table.uv-table tr:nth-child(even) td { background: #F9FAFB; }
+
+  .uv-footer { margin-top: 24px; padding-top: 12px; border-top: 1px solid #E5E7EB; font-size: 11px; color: #6B7280; text-align: center; }
+
+  @media (max-width: 700px) {
+    .uv-feature-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="uv-page">
+
+  <header class="uv-banner">
+    <span class="uv-tag">COMIENZA AQUÍ · D · RECURSOS Y SOPORTE</span>
+    <div class="uv-kicker">UFPS · UVirtual · {{NOMBRE_CURSO}}</div>
+    <h1>Accesibilidad y adaptaciones en este curso</h1>
+    <div class="uv-subtitle">Qué encuentras ya construido y cómo pedir un ajuste si lo necesitas</div>
+  </header>
+
+  <section class="uv-section">
+    <div class="uv-card">
+      <p style="font-size: 14px;">
+        Este curso se diseñó siguiendo el estándar internacional de accesibilidad
+        web (WCAG 2.1 nivel AA). Eso significa que, sin que tengas que pedir
+        nada, ya deberías encontrar el curso navegable, legible y usable
+        independientemente de cómo accedas a él.
+      </p>
+    </div>
+  </section>
+
+  <section class="uv-section">
+    <h2>Lo que ya está construido en este curso</h2>
+    <div class="uv-feature-grid">
+      <div class="uv-feature">
+        <div class="uv-feature-icon">✓</div>
+        <div>
+          <div class="uv-feature-title">Subtítulos en videos</div>
+          <div class="uv-feature-desc">Todos los videos del docente tienen subtítulos sincronizados en español.</div>
+        </div>
+      </div>
+      <div class="uv-feature">
+        <div class="uv-feature-icon">✓</div>
+        <div>
+          <div class="uv-feature-title">Transcripciones</div>
+          <div class="uv-feature-desc">Los audios y podcasts del curso incluyen transcripción textual completa.</div>
+        </div>
+      </div>
+      <div class="uv-feature">
+        <div class="uv-feature-icon">✓</div>
+        <div>
+          <div class="uv-feature-title">Navegación por teclado</div>
+          <div class="uv-feature-desc">Puedes moverte por todo el curso sin usar el mouse (Tab, Enter, flechas).</div>
+        </div>
+      </div>
+      <div class="uv-feature">
+        <div class="uv-feature-icon">✓</div>
+        <div>
+          <div class="uv-feature-title">Estructura predecible</div>
+          <div class="uv-feature-desc">Los 8 bloques van siempre en el mismo orden en cada unidad, sin sorpresas.</div>
+        </div>
+      </div>
+      <div class="uv-feature">
+        <div class="uv-feature-icon">✓</div>
+        <div>
+          <div class="uv-feature-title">PDFs con texto real</div>
+          <div class="uv-feature-desc">Los documentos del curso tienen texto seleccionable, no son imágenes escaneadas.</div>
+        </div>
+      </div>
+      <div class="uv-feature">
+        <div class="uv-feature-icon">✓</div>
+        <div>
+          <div class="uv-feature-title">Buen contraste de color</div>
+          <div class="uv-feature-desc">Los textos y botones cumplen el contraste mínimo para leerse con facilidad.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="uv-section">
+    <h2>Adaptaciones que puedes solicitar</h2>
+    <p style="font-size: 14px;">
+      Si tienes una condición de salud, discapacidad o situación particular
+      que necesita un ajuste adicional, puedes solicitar:
+    </p>
+    <table class="uv-table">
+      <thead>
+        <tr><th style="width: 35%;">Adaptación</th><th style="width: 65%;">En qué consiste</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Tiempo extendido</td><td>Hasta 50% más de tiempo en cuestionarios y exámenes cronometrados.</td></tr>
+        <tr><td>Formato alternativo</td><td>Materiales en audio, texto ampliado, alto contraste o lengua de señas.</td></tr>
+        <tr><td>Evaluación alternativa</td><td>Cambiar una modalidad por otra equivalente (ej. oral por escrita).</td></tr>
+        <tr><td>Pausas adicionales</td><td>Interrupciones controladas en evaluaciones largas.</td></tr>
+        <tr><td>Asistencia técnica</td><td>Compatibilidad con lector de pantalla, dictado por voz, teclado adaptado.</td></tr>
+        <tr><td>Acompañamiento</td><td>Intérprete de lengua de señas o asistente autorizado.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="uv-section">
+    <h2>Cómo solicitarla</h2>
+    <div class="uv-card uv-card-verde">
+      <h3>Dos caminos, igual de válidos</h3>
+      <p><strong>1.</strong> Regístrate ante el Programa de Inclusión UFPS: <span class="uv-editable">[inclusion@ufps.edu.co]</span> — Bienestar Universitario.</p>
+      <p><strong>2.</strong> O escríbele directamente a tu docente por mensajería de Moodle explicando qué necesitas.</p>
+      <p style="margin-top: 8px;">Puedes hacerlo al inicio del semestre o en cuanto lo necesites — no tienes que esperar a que algo falle primero.</p>
+    </div>
+  </section>
+
+  <section class="uv-section">
+    <h2>Tu privacidad está protegida</h2>
+    <div class="uv-card uv-card-dorado">
+      <p style="font-size: 14px;">
+        Tu condición es información confidencial (Ley 1581 de 2012). El
+        docente la conoce solo para aplicar la adaptación — no la comparte
+        con tus compañeros ni la discute fuera del ámbito académico.
+      </p>
+    </div>
+  </section>
+
+  <section class="uv-section">
+    <h2>¿Algo no es accesible?</h2>
+    <div class="uv-card uv-card-rojo">
+      <p style="font-size: 14px;">
+        Si encuentras un video sin subtítulos, un PDF que no se puede leer con
+        lector de pantalla, o cualquier otra barrera, avísale a tu docente o
+        escribe a Soporte técnico UVirtual (ver página "Soporte técnico +
+        bienestar" en este mismo bloque). Nos ayuda a corregirlo para ti y
+        para quienes tomen el curso después.
+      </p>
+    </div>
+  </section>
+
+  <footer class="uv-footer">
+    UFPS · UVirtual · {{NOMBRE_CURSO}} · Comienza Aquí · Accesibilidad y adaptaciones · v. 1.0
+  </footer>
+
+</div>

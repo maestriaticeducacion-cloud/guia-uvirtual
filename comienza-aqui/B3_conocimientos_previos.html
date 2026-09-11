@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Plantilla de Conocimientos Previos — UVirtual UFPS</title>
+<link rel="stylesheet" href="fa/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+.form-field {
+  background: var(--ufps-gris-50);
+  border: 1px solid var(--ufps-gris-300);
+  border-radius: 4px;
+  padding: 2.5mm 3mm;
+  font-size: 9.5pt;
+  min-height: 8mm;
+}
+.form-label {
+  font-size: 8.5pt;
+  font-weight: 700;
+  color: var(--ufps-rojo);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5mm;
+  display: block;
+}
+.form-helper {
+  font-size: 8pt;
+  color: var(--ufps-gris-500);
+  font-style: italic;
+  margin-top: 1mm;
+}
+.field-group {
+  margin-bottom: 4mm;
+}
+.example-box {
+  background: var(--ufps-azul-claro);
+  border-left: 3px solid var(--ufps-azul);
+  padding: 2.5mm 3mm;
+  border-radius: 0 4px 4px 0;
+  font-size: 9pt;
+  margin-top: 1.5mm;
+  color: var(--ufps-azul);
+}
+.example-label {
+  font-weight: 700;
+  font-size: 8pt;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1mm;
+  display: block;
+}
+.checkbox-row {
+  display: flex;
+  gap: 4mm;
+  align-items: center;
+  padding: 1.5mm 0;
+  font-size: 9.5pt;
+}
+.checkbox-empty {
+  width: 4mm;
+  height: 4mm;
+  border: 1.5px solid var(--ufps-gris-500);
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+<header class="doc-header">
+  <span class="qm-tag">QM SRS 1.7</span>
+  <div class="doc-header-meta">UFPS · Unidad de Educación Virtual · Plantilla editable por docente</div>
+  <h1>Conocimientos Previos del Curso</h1>
+  <p class="doc-header-subtitle">Plantilla institucional UVirtual para declarar prerrequisitos académicos · Diligenciar al inicio de cada curso</p>
+</header>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-circle-question"></i></span>
+    Cómo usar esta plantilla
+  </h2>
+  <div class="card card-accent-azul">
+    <p style="margin: 0; font-size: 8.5pt;">
+      Este formato lo diligencia el docente al armar cada curso. Cuando el estudiante ingrese a "Comienza Aquí" verá los conocimientos previos esperados y podrá autoevaluarse antes de iniciar. <strong>Es obligatorio</strong> en el Estándar 1 de QM.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-id-card"></i></span>
+    Información del curso
+  </h2>
+  <div class="grid-2">
+    <div class="field-group">
+      <span class="form-label">Nombre del curso</span>
+      <div class="form-field">_________________________________________</div>
+    </div>
+    <div class="field-group">
+      <span class="form-label">Código asignatura</span>
+      <div class="form-field">_________________________________________</div>
+    </div>
+    <div class="field-group">
+      <span class="form-label">Programa</span>
+      <div class="form-field">_________________________________________</div>
+    </div>
+    <div class="field-group">
+      <span class="form-label">Semestre / Nivel</span>
+      <div class="form-field">_________________________________________</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-link"></i></span>
+    Prerrequisitos formales (cursos previos)
+  </h2>
+  <div class="field-group">
+    <span class="form-label">Cursos que el estudiante DEBE haber aprobado</span>
+    <div class="form-field" style="min-height: 10mm;">_________________________________________________<br>_________________________________________________</div>
+    <div class="form-helper">Si no hay prerrequisitos formales, declarar "Ninguno".</div>
+    <div class="example-box">
+      <span class="example-label">Ejemplo</span>
+      Programación Orientada a Objetos I (1153031), Estructuras de Datos (1153042), Bases de Datos I (1153055).
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-brain"></i></span>
+    Conocimientos conceptuales y habilidades procedimentales esperadas
+  </h2>
+  <div class="grid-2">
+    <div class="field-group">
+      <span class="form-label">Conceptos / teorías a dominar</span>
+      <div class="form-field" style="min-height: 14mm;">_____________________________________<br>_____________________________________<br>_____________________________________</div>
+      <div class="example-box" style="margin-top: 1mm;">
+        <span class="example-label">Ejemplo</span>
+        POO (clase, objeto, herencia). Modelo entidad-relación. UML básico.
+      </div>
+    </div>
+    <div class="field-group">
+      <span class="form-label">Habilidades / herramientas que debe manejar</span>
+      <div class="form-field" style="min-height: 14mm;">_____________________________________<br>_____________________________________<br>_____________________________________</div>
+      <div class="example-box" style="margin-top: 1mm;">
+        <span class="example-label">Ejemplo</span>
+        Java 17+ en IntelliJ. Git: clone, commit, push. SQL: SELECT, JOIN.
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<div class="page">
+
+<header class="doc-header">
+  <div class="doc-header-meta">UFPS · UVirtual · Plantilla de Conocimientos Previos · Página 2</div>
+  <h1 style="font-size: 18pt;">Autoevaluación y nivelación</h1>
+</header>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-list-check"></i></span>
+    Lista de autoevaluación para el estudiante
+  </h2>
+  <p style="font-size: 9pt; margin: 0 0 2mm;">El docente convierte cada conocimiento previo en una pregunta de sí/no para que el estudiante se autoevalúe antes de iniciar el curso.</p>
+
+  <div class="card" style="margin-bottom: 2mm; padding: 2.5mm 3mm;">
+    <div class="checkbox-row">
+      <div class="checkbox-empty"></div>
+      <span>¿Puedo crear una clase en Java con sus atributos, métodos y constructor?</span>
+    </div>
+    <div class="checkbox-row">
+      <div class="checkbox-empty"></div>
+      <span>¿Entiendo la diferencia entre clase y objeto, y puedo dar un ejemplo?</span>
+    </div>
+    <div class="checkbox-row">
+      <div class="checkbox-empty"></div>
+      <span>¿Sé qué es la herencia y cuándo usarla?</span>
+    </div>
+    <div class="checkbox-row">
+      <div class="checkbox-empty"></div>
+      <span>¿Puedo escribir una consulta SQL con JOIN entre dos tablas?</span>
+    </div>
+    <div class="checkbox-row">
+      <div class="checkbox-empty"></div>
+      <span>¿Tengo configurado Git en mi computador y sé hacer commit + push?</span>
+    </div>
+  </div>
+  <div class="form-helper" style="text-align: center; margin-top: 1mm;">
+    [Espacio editable por el docente — agregar las preguntas específicas]
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-route"></i></span>
+    Rutas de nivelación
+  </h2>
+  <p style="font-size: 9pt; margin: 0 0 2mm;">Si el estudiante respondió "No" a una o más preguntas, indica dónde puede nivelarse:</p>
+
+  <div class="grid-2">
+    <div class="field-group">
+      <span class="form-label">Recurso de nivelación · Tema 1</span>
+      <div class="form-field" style="min-height: 9mm;">Tema: _______________________<br>Recurso: _____________________</div>
+    </div>
+    <div class="field-group">
+      <span class="form-label">Recurso de nivelación · Tema 2</span>
+      <div class="form-field" style="min-height: 9mm;">Tema: _______________________<br>Recurso: _____________________</div>
+    </div>
+  </div>
+
+  <div class="example-box" style="margin-top: 2mm;">
+    <span class="example-label">Ejemplo</span>
+    Tema: Herencia en Java · Recurso: Capítulo 9 del libro guía + Video tutorial UVirtual "OOP en 60 minutos" (uvirtual.ufps.edu.co/recursos/oop60).
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-bullhorn"></i></span>
+    Mensaje al estudiante y validación docente
+  </h2>
+  <div class="highlight">
+    <strong>Mensaje sugerido:</strong> "Si después de autoevaluarte identificas que tienes vacíos en más del 50% de los temas, completa primero la nivelación antes de iniciar. El curso asume estos prerrequisitos. Ante dudas, contacta al docente en la primera semana."
+  </div>
+
+  <div class="grid-2" style="margin-top: 2mm;">
+    <div class="field-group">
+      <span class="form-label">Docente responsable</span>
+      <div class="form-field">_________________________________________</div>
+    </div>
+    <div class="field-group">
+      <span class="form-label">Fecha de elaboración</span>
+      <div class="form-field">_________________________________________</div>
+    </div>
+  </div>
+</section>
+
+<footer class="doc-footer">
+  <span><span class="doc-footer-logo">UVirtual UFPS</span> · Plantilla de Conocimientos Previos</span>
+  <span>v. 1.0 · 2026 · Página 2 de 2</span>
+</footer>
+
+</div>
+
+</body>
+</html>

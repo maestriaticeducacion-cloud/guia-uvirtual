@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Competencias Digitales Esperadas — UVirtual UFPS</title>
+<link rel="stylesheet" href="fa/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+.competence-area {
+  background: white;
+  border: 1px solid var(--ufps-gris-300);
+  border-left: 5px solid var(--ufps-rojo);
+  border-radius: 4px;
+  padding: 3mm 4mm;
+  margin-bottom: 3mm;
+}
+.competence-area-header {
+  display: flex;
+  align-items: center;
+  gap: 2mm;
+  margin-bottom: 2mm;
+}
+.competence-area-icon {
+  width: 8mm;
+  height: 8mm;
+  background: var(--ufps-rojo);
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11pt;
+}
+.competence-area-title {
+  font-weight: 700;
+  font-size: 11pt;
+}
+.competence-area-area {
+  font-size: 8pt;
+  color: var(--ufps-gris-500);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: auto;
+}
+.competence-list {
+  font-size: 9pt;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  columns: 2;
+  column-gap: 5mm;
+}
+.competence-list li {
+  padding: 0.8mm 0 0.8mm 5mm;
+  position: relative;
+  break-inside: avoid;
+}
+.competence-list li::before {
+  content: '\f105';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: var(--ufps-rojo);
+}
+.level-bar {
+  display: flex;
+  gap: 1mm;
+  margin-top: 1.5mm;
+  align-items: center;
+}
+.level-dot {
+  width: 4mm;
+  height: 4mm;
+  border-radius: 50%;
+  background: var(--ufps-gris-300);
+}
+.level-dot.active { background: var(--ufps-rojo); }
+.level-label {
+  font-size: 7.5pt;
+  color: var(--ufps-gris-500);
+  margin-left: 2mm;
+  font-weight: 600;
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+<header class="doc-header">
+  <span class="qm-tag">QM SRS 1.6</span>
+  <div class="doc-header-meta">UFPS · Unidad de Educación Virtual · Documento Institucional</div>
+  <h1>Competencias Digitales Esperadas del Estudiante</h1>
+  <p class="doc-header-subtitle">Habilidades mínimas para participar exitosamente en los cursos virtuales UVirtual · Basado en DigComp 2.2 (Unión Europea)</p>
+</header>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-circle-info"></i></span>
+    Marco de referencia
+  </h2>
+  <p style="font-size: 9.5pt; margin: 0 0 3mm;">
+    UVirtual adopta el marco europeo <strong>DigComp 2.2</strong> que organiza las competencias digitales en 5 áreas. Para cursar exitosamente un programa virtual UFPS, el estudiante debe alcanzar al menos <strong>nivel intermedio (3-4 de 8)</strong> en cada área antes de iniciar. Los cursos también desarrollan estas competencias.
+  </p>
+  <div class="grid-4" style="margin-top: 3mm;">
+    <div class="card" style="text-align: center; padding: 3mm 2mm;">
+      <div style="font-size: 8pt; color: var(--ufps-gris-500); font-weight: 600;">NIVEL 1-2</div>
+      <div style="font-weight: 700; font-size: 9pt; color: var(--ufps-gris-700);">Básico</div>
+      <div style="font-size: 8pt; color: var(--ufps-gris-500);">Tareas simples con guía</div>
+    </div>
+    <div class="card card-accent-rojo" style="text-align: center; padding: 3mm 2mm;">
+      <div style="font-size: 8pt; color: var(--ufps-rojo-hover); font-weight: 600;">NIVEL 3-4 ⭐</div>
+      <div style="font-weight: 700; font-size: 9pt;">Intermedio</div>
+      <div style="font-size: 8pt; color: var(--ufps-rojo-hover);">Mínimo UVirtual</div>
+    </div>
+    <div class="card" style="text-align: center; padding: 3mm 2mm;">
+      <div style="font-size: 8pt; color: var(--ufps-gris-500); font-weight: 600;">NIVEL 5-6</div>
+      <div style="font-weight: 700; font-size: 9pt; color: var(--ufps-gris-700);">Avanzado</div>
+      <div style="font-size: 8pt; color: var(--ufps-gris-500);">Autonomía completa</div>
+    </div>
+    <div class="card" style="text-align: center; padding: 3mm 2mm;">
+      <div style="font-size: 8pt; color: var(--ufps-gris-500); font-weight: 600;">NIVEL 7-8</div>
+      <div style="font-weight: 700; font-size: 9pt; color: var(--ufps-gris-700);">Especializado</div>
+      <div style="font-size: 8pt; color: var(--ufps-gris-500);">Innovación experta</div>
+    </div>
+  </div>
+</section>
+
+<div class="competence-area">
+  <div class="competence-area-header">
+    <div class="competence-area-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+    <div class="competence-area-title">1. Información y alfabetización digital</div>
+    <div class="competence-area-area">Área 1</div>
+  </div>
+  <ul class="competence-list">
+    <li>Buscar información en bases de datos académicas (Scopus, Scholar, SciELO).</li>
+    <li>Evaluar la credibilidad de fuentes y detectar desinformación.</li>
+    <li>Gestionar archivos en carpetas locales y en la nube (Drive, OneDrive).</li>
+    <li>Citar fuentes en formato APA, IEEE u otro según el área.</li>
+  </ul>
+  <div class="level-bar">
+    <div class="level-dot"></div><div class="level-dot"></div>
+    <div class="level-dot active"></div><div class="level-dot active"></div>
+    <div class="level-dot"></div><div class="level-dot"></div>
+    <div class="level-dot"></div><div class="level-dot"></div>
+    <span class="level-label">Nivel mínimo: 3-4</span>
+  </div>
+</div>
+
+<div class="competence-area">
+  <div class="competence-area-header">
+    <div class="competence-area-icon"><i class="fa-solid fa-comments"></i></div>
+    <div class="competence-area-title">2. Comunicación y colaboración</div>
+    <div class="competence-area-area">Área 2</div>
+  </div>
+  <ul class="competence-list">
+    <li>Usar correo institucional UFPS de forma profesional.</li>
+    <li>Participar en foros académicos con argumentación clara.</li>
+    <li>Asistir y participar en videoconferencias (Meet, BBB, Zoom).</li>
+    <li>Colaborar en documentos compartidos en tiempo real.</li>
+    <li>Aplicar netiqueta en interacciones académicas.</li>
+    <li>Reconocer y proteger tu identidad digital.</li>
+  </ul>
+  <div class="level-bar">
+    <div class="level-dot"></div><div class="level-dot"></div>
+    <div class="level-dot active"></div><div class="level-dot active"></div>
+    <div class="level-dot"></div><div class="level-dot"></div>
+    <div class="level-dot"></div><div class="level-dot"></div>
+    <span class="level-label">Nivel mínimo: 3-4</span>
+  </div>
+</div>
+
+<div class="competence-area">
+  <div class="competence-area-header">
+    <div class="competence-area-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+    <div class="competence-area-title">3. Creación de contenido digital</div>
+    <div class="competence-area-area">Área 3</div>
+  </div>
+  <ul class="competence-list">
+    <li>Crear documentos en Word/Docs con estructura, tablas y figuras.</li>
+    <li>Construir presentaciones con buen diseño visual.</li>
+    <li>Editar imágenes básicas (recortar, redimensionar, anotar).</li>
+    <li>Grabar y editar videos cortos cuando se solicite.</li>
+    <li>Usar IA generativa de forma ética y declarada.</li>
+    <li>Entender derechos de autor y licencias Creative Commons.</li>
+  </ul>
+  <div class="level-bar">
+    <div class="level-dot"></div><div class="level-dot"></div>
+    <div class="level-dot active"></div><div class="level-dot active"></div>
+    <div class="level-dot"></div><div class="level-dot"></div>
+    <div class="level-dot"></div><div class="level-dot"></div>
+    <span class="level-label">Nivel mínimo: 3-4</span>
+  </div>
+</div>
+
+<div class="competence-area">
+  <div class="competence-area-header">
+    <div class="competence-area-icon"><i class="fa-solid fa-shield-halved"></i></div>
+    <div class="competence-area-title">4. Seguridad digital</div>
+    <div class="competence-area-area">Área 4</div>
+  </div>
+  <ul class="competence-list">
+    <li>Gestionar contraseñas seguras y autenticación de dos factores.</li>
+    <li>Reconocer phishing, malware y enlaces sospechosos.</li>
+    <li>Hacer copias de seguridad de tus trabajos académicos.</li>
+    <li>Proteger tu privacidad en redes sociales y servicios web.</li>
+  </ul>
+  <div class="level-bar">
+    <div class="level-dot"></div><div class="level-dot"></div>
+    <div class="level-dot active"></div><div class="level-dot active"></div>
+    <div class="level-dot"></div><div class="level-dot"></div>
+    <div class="level-dot"></div><div class="level-dot"></div>
+    <span class="level-label">Nivel mínimo: 3-4</span>
+  </div>
+</div>
+
+<div class="competence-area">
+  <div class="competence-area-header">
+    <div class="competence-area-icon"><i class="fa-solid fa-wrench"></i></div>
+    <div class="competence-area-title">5. Resolución de problemas</div>
+    <div class="competence-area-area">Área 5</div>
+  </div>
+  <ul class="competence-list">
+    <li>Diagnosticar problemas técnicos básicos antes de pedir ayuda.</li>
+    <li>Buscar soluciones en documentación oficial y foros confiables.</li>
+    <li>Aprender herramientas nuevas de forma autónoma.</li>
+    <li>Adaptar tu entorno digital a tus necesidades de estudio.</li>
+  </ul>
+  <div class="level-bar">
+    <div class="level-dot"></div><div class="level-dot"></div>
+    <div class="level-dot active"></div><div class="level-dot active"></div>
+    <div class="level-dot"></div><div class="level-dot"></div>
+    <div class="level-dot"></div><div class="level-dot"></div>
+    <span class="level-label">Nivel mínimo: 3-4</span>
+  </div>
+</div>
+
+<section class="section" style="margin-top: 4mm;">
+  <div class="highlight">
+    <strong><i class="fa-solid fa-graduation-cap"></i> Autoevaluación inicial:</strong> en la primera semana del programa puedes realizar el test diagnóstico DigComp disponible en el aula virtual. Si identificas áreas débiles, UVirtual ofrece micro-cursos de nivelación de 4 horas cada uno por área de competencia.
+  </div>
+</section>
+
+<footer class="doc-footer">
+  <span><span class="doc-footer-logo">UVirtual UFPS</span> · Competencias Digitales Esperadas</span>
+  <span>v. 1.0 · 2026 · Página 1 de 1</span>
+</footer>
+
+</div>
+
+</body>
+</html>

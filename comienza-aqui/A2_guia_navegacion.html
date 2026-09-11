@@ -1,0 +1,326 @@
+<!--
+  PÁGINA MOODLE · COMIENZA AQUÍ · SUB-BLOQUE A2 — GUÍA DE NAVEGACIÓN + MAPA DEL CURSO
+  Cómo usar: copia todo el contenido <style> + <div class="uv-page"> y pégalo
+  en el editor HTML de un recurso "Página" de Moodle, dentro del sub-bloque
+  A · Bienvenida y orientación. Reemplaza los marcadores {{ENTRE_LLAVES}}
+  con tu contenido real y los <span class="uv-editable">…</span> con el
+  texto que corresponda.
+-->
+
+<meta charset="UTF-8">
+<style>
+  .uv-page { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: #1A1D20; line-height: 1.5; max-width: 1000px; margin: 0 auto; }
+  .uv-banner { background: #A32D2D; color: white; padding: 18px 24px; border-radius: 8px 8px 0 0; border-bottom: 4px solid #D4A017; }
+  .uv-banner .uv-kicker { font-size: 11px; letter-spacing: 1px; opacity: 0.85; text-transform: uppercase; margin-bottom: 6px; }
+  .uv-banner h1 { margin: 0; font-size: 24px; font-weight: 700; color: white; }
+  .uv-banner .uv-subtitle { margin-top: 6px; font-size: 14px; font-style: italic; opacity: 0.9; }
+  .uv-tag { display: inline-block; background: #D4A017; color: #1A1D20; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 4px; margin-bottom: 8px; }
+  .uv-section { margin: 24px 0; }
+  .uv-section h2 { color: #1A1D20; font-size: 18px; font-weight: 700; border-left: 4px solid #A32D2D; padding: 4px 0 4px 10px; margin-bottom: 12px; }
+  .uv-card { background: #F9FAFB; border-left: 4px solid #0F4C81; padding: 12px 16px; margin: 12px 0; border-radius: 0 6px 6px 0; }
+  .uv-card.uv-card-rojo { border-left-color: #A32D2D; background: #FFF1F2; }
+  .uv-card.uv-card-dorado { border-left-color: #D4A017; background: #FFF8E1; }
+  .uv-card.uv-card-verde { border-left-color: #1F7A3C; background: #E8F5E9; }
+  .uv-card h3 { margin: 0 0 6px 0; font-size: 14px; }
+  .uv-card.uv-card-rojo h3 { color: #A32D2D; }
+  .uv-card.uv-card-dorado h3 { color: #B8901C; }
+  .uv-card.uv-card-verde h3 { color: #1F7A3C; }
+  .uv-card p { margin: 4px 0; font-size: 14px; }
+  .uv-editable { background: #FFF8E1; border: 1px dashed #D4A017; padding: 2px 8px; border-radius: 3px; color: #B8901C; font-style: italic; }
+
+  /* Árbol de estructura del aula */
+  .uv-tree { background: #1A1D20; color: #E5E7EB; padding: 18px 20px; border-radius: 8px; font-family: Consolas, "Courier New", monospace; font-size: 12px; line-height: 1.7; overflow-x: auto; margin: 12px 0; }
+  .uv-tree .t-root { color: #F3F4F6; font-weight: 700; }
+  .uv-tree .t-comienza { color: #FCA5A5; font-weight: 700; }
+  .uv-tree .t-unidad { color: #93C5FD; font-weight: 700; }
+  .uv-tree .t-cierre { color: #FDE68A; font-weight: 700; }
+  .uv-tree .t-nota { color: #86EFAC; }
+  .uv-tree .t-dim { color: #9CA3AF; }
+
+  /* Los 8 bloques - lista visual numerada */
+  .uv-bloque-list { margin: 16px 0; }
+  .uv-bloque-item { display: flex; align-items: flex-start; gap: 14px; background: white; border: 1px solid #E5E7EB; border-radius: 8px; padding: 12px 16px; margin: 8px 0; }
+  .uv-bloque-num { flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; color: white; }
+  .uv-bloque-content { flex: 1; }
+  .uv-bloque-title { font-weight: 700; font-size: 14px; margin-bottom: 2px; }
+  .uv-bloque-desc { font-size: 13px; color: #4B5563; }
+  .uv-bloque-badge { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 10px; margin-left: 6px; vertical-align: middle; }
+  .uv-badge-sinnota { background: #F3F4F6; color: #6B7280; }
+  .uv-badge-nota { background: #FFF1F2; color: #A32D2D; }
+
+  .uv-num-gris { background: #9CA3AF; }
+  .uv-num-azul { background: #0F4C81; }
+  .uv-num-verde { background: #1F7A3C; }
+  .uv-num-rojo { background: #A32D2D; }
+  .uv-num-dorado { background: #D4A017; color: #1A1D20 !important; }
+
+  /* Tabla de navegación / atajos */
+  table.uv-table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+  table.uv-table th { background: #A32D2D; color: white; padding: 10px 12px; text-align: left; }
+  table.uv-table td { padding: 9px 12px; border-bottom: 1px solid #E5E7EB; vertical-align: top; }
+  table.uv-table tr:nth-child(even) td { background: #F9FAFB; }
+
+  .uv-icon-row { display: flex; align-items: center; gap: 8px; }
+  .uv-icon-box { width: 26px; height: 26px; border-radius: 5px; display: flex; align-items: center; justify-content: center; font-size: 13px; flex-shrink: 0; }
+
+  .uv-footer { margin-top: 24px; padding-top: 12px; border-top: 1px solid #E5E7EB; font-size: 11px; color: #6B7280; text-align: center; }
+
+  @media (max-width: 700px) {
+    .uv-bloque-item { flex-direction: row; }
+    .uv-tree { font-size: 10.5px; }
+  }
+</style>
+
+<div class="uv-page">
+
+  <header class="uv-banner">
+    <span class="uv-tag">COMIENZA AQUÍ · A · BIENVENIDA Y ORIENTACIÓN</span>
+    <div class="uv-kicker">UFPS · UVirtual · {{NOMBRE_CURSO}}</div>
+    <h1>Guía de navegación y mapa del curso</h1>
+    <div class="uv-subtitle">Cómo se organiza esta aula, qué esperar en cada unidad y cómo moverte por los 8 bloques</div>
+  </header>
+
+  <section class="uv-section">
+    <h2>¿Por qué esta guía?</h2>
+    <p style="font-size: 14px;">
+      Todas las aulas virtuales de UVirtual siguen <strong>la misma estructura</strong>,
+      así que una vez que aprendas a navegar este curso, sabrás navegar cualquier
+      otro curso UVirtual. Tómate 5 minutos para leer esta página antes de
+      avanzar: te va a ahorrar tiempo y confusión durante todo el semestre.
+    </p>
+  </section>
+
+  <section class="uv-section">
+    <h2>Mapa completo del aula</h2>
+    <p style="font-size: 14px;">
+      Así se ve la estructura de este curso de principio a fin:
+    </p>
+
+    <div class="uv-tree">
+      <div class="t-root">📚 {{NOMBRE_CURSO}}</div>
+      <div>│</div>
+      <div class="t-comienza">├─ 📍 COMIENZA AQUÍ <span class="t-dim">← estás aquí</span></div>
+      <div class="t-dim">│&nbsp;&nbsp;&nbsp;├─ A · Bienvenida y orientación</div>
+      <div class="t-dim">│&nbsp;&nbsp;&nbsp;├─ B · Información académica</div>
+      <div class="t-dim">│&nbsp;&nbsp;&nbsp;├─ C · Políticas y lineamientos</div>
+      <div class="t-dim">│&nbsp;&nbsp;&nbsp;└─ D · Recursos y soporte</div>
+      <div>│</div>
+      <div class="t-unidad">├─ 📘 UNIDAD 1 · <span class="uv-editable" style="color:#93C5FD; background:transparent; border-color:#93C5FD;">[Título unidad 1]</span></div>
+      <div class="t-dim">│&nbsp;&nbsp;&nbsp;├─ 1 Inicio de unidad</div>
+      <div class="t-dim">│&nbsp;&nbsp;&nbsp;├─ 2 Objetivos de aprendizaje</div>
+      <div class="t-dim">│&nbsp;&nbsp;&nbsp;├─ 3 Mapa de alineación QM</div>
+      <div class="t-dim">│&nbsp;&nbsp;&nbsp;├─ 4 Materiales de estudio</div>
+      <div class="t-dim">│&nbsp;&nbsp;&nbsp;├─ 5 Actividades de práctica <span class="t-nota">· calificable</span></div>
+      <div class="t-dim">│&nbsp;&nbsp;&nbsp;├─ 6 Síntesis y discusión <span class="t-nota">· calificable</span></div>
+      <div class="t-dim">│&nbsp;&nbsp;&nbsp;├─ 7 Evaluación con integridad <span class="t-nota">· calificable</span></div>
+      <div class="t-dim">│&nbsp;&nbsp;&nbsp;└─ 8 Cierre y autoevaluación <span class="t-nota">· calificable</span></div>
+      <div>│</div>
+      <div class="t-unidad">├─ 📘 UNIDAD 2 · <span class="uv-editable" style="color:#93C5FD; background:transparent; border-color:#93C5FD;">[Título unidad 2]</span></div>
+      <div class="t-dim">│&nbsp;&nbsp;&nbsp;└─ (mismos 8 bloques)</div>
+      <div>│</div>
+      <div class="t-unidad">├─ 📘 UNIDAD <span class="uv-editable" style="color:#93C5FD; background:transparent; border-color:#93C5FD;">[N]</span> · <span class="uv-editable" style="color:#93C5FD; background:transparent; border-color:#93C5FD;">[Título última unidad]</span></div>
+      <div class="t-dim">│&nbsp;&nbsp;&nbsp;└─ (mismos 8 bloques)</div>
+      <div>│</div>
+      <div class="t-cierre">└─ 🎓 CIERRE DEL CURSO</div>
+      <div class="t-dim">&nbsp;&nbsp;&nbsp;&nbsp;├─ Evaluación final integradora <span class="t-nota">· calificable</span></div>
+      <div class="t-dim">&nbsp;&nbsp;&nbsp;&nbsp;├─ Encuesta de satisfacción</div>
+      <div class="t-dim">&nbsp;&nbsp;&nbsp;&nbsp;├─ Certificado de finalización</div>
+      <div class="t-dim">&nbsp;&nbsp;&nbsp;&nbsp;└─ Despedida y siguientes pasos</div>
+    </div>
+
+    <p style="font-size: 12px; color: #6B7280; font-style: italic;">
+      Este curso tiene <strong><span class="uv-editable">[N]</span> unidades</strong>.
+      Cada una se abre según el calendario declarado en el bloque
+      "Calendario de la unidad" (Bloque 1 de cada unidad).
+    </p>
+  </section>
+
+  <section class="uv-section">
+    <h2>Los 3 momentos del curso</h2>
+    <div class="uv-card">
+      <h3>📍 Comienza Aquí — antes de empezar a estudiar</h3>
+      <p>
+        Aquí están las reglas del juego: quién es tu docente, qué se espera de
+        ti, cómo se evalúa, qué hacer si tienes problemas técnicos. Se lee
+        <strong>una sola vez</strong>, al inicio, pero puedes volver cuando
+        lo necesites.
+      </p>
+    </div>
+    <div class="uv-card uv-card-azul" style="border-left-color:#0F4C81; background:#DDEBFE;">
+      <h3 style="color:#0F4C81;">📘 Unidades — donde aprendes y te evalúan</h3>
+      <p>
+        El corazón del curso. Cada unidad tiene la misma estructura de 8
+        bloques, así que siempre sabrás qué esperar y en qué orden avanzar.
+      </p>
+    </div>
+    <div class="uv-card uv-card-dorado">
+      <h3>🎓 Cierre del Curso — al final del semestre</h3>
+      <p>
+        La evaluación integradora, tu certificado y la despedida. Se abre
+        cuando completas las unidades.
+      </p>
+    </div>
+  </section>
+
+  <section class="uv-section">
+    <h2>Los 8 bloques de cada unidad, explicados</h2>
+    <p style="font-size: 14px;">
+      Este es el recorrido que vas a repetir en <strong>cada</strong> unidad
+      del curso. Aprenderlo una vez te sirve para todas.
+    </p>
+
+    <div class="uv-bloque-list">
+      <div class="uv-bloque-item">
+        <div class="uv-bloque-num uv-num-gris">1</div>
+        <div class="uv-bloque-content">
+          <div class="uv-bloque-title">Inicio de unidad <span class="uv-bloque-badge uv-badge-sinnota">Sin nota</span></div>
+          <div class="uv-bloque-desc">Video de bienvenida del docente, contexto de la unidad y calendario con las fechas clave.</div>
+        </div>
+      </div>
+
+      <div class="uv-bloque-item">
+        <div class="uv-bloque-num uv-num-gris">2</div>
+        <div class="uv-bloque-content">
+          <div class="uv-bloque-title">Objetivos de aprendizaje <span class="uv-bloque-badge uv-badge-sinnota">Sin nota</span></div>
+          <div class="uv-bloque-desc">Qué vas a saber hacer al terminar la unidad. Léelo con atención: es exactamente lo que se evalúa después.</div>
+        </div>
+      </div>
+
+      <div class="uv-bloque-item">
+        <div class="uv-bloque-num uv-num-gris">3</div>
+        <div class="uv-bloque-content">
+          <div class="uv-bloque-title">Mapa de alineación QM <span class="uv-bloque-badge uv-badge-sinnota">Sin nota</span></div>
+          <div class="uv-bloque-desc">Una tabla que conecta cada objetivo con el material que lo enseña, la práctica que lo ejercita y la evaluación que lo mide.</div>
+        </div>
+      </div>
+
+      <div class="uv-bloque-item">
+        <div class="uv-bloque-num uv-num-gris">4</div>
+        <div class="uv-bloque-content">
+          <div class="uv-bloque-title">Materiales de estudio <span class="uv-bloque-badge uv-badge-sinnota">Sin nota</span></div>
+          <div class="uv-bloque-desc">Lecturas, videos y recursos organizados en núcleo obligatorio, complementarios y opcionales.</div>
+        </div>
+      </div>
+
+      <div class="uv-bloque-item">
+        <div class="uv-bloque-num uv-num-azul">5</div>
+        <div class="uv-bloque-content">
+          <div class="uv-bloque-title">Actividades de práctica <span class="uv-bloque-badge uv-badge-nota">Formativa</span></div>
+          <div class="uv-bloque-desc">Talleres y autoevaluaciones para practicar antes de la evaluación que sí cuenta. Haz todas: son tu mejor preparación.</div>
+        </div>
+      </div>
+
+      <div class="uv-bloque-item">
+        <div class="uv-bloque-num uv-num-verde">6</div>
+        <div class="uv-bloque-content">
+          <div class="uv-bloque-title">Síntesis y discusión <span class="uv-bloque-badge uv-badge-nota">Formativa</span></div>
+          <div class="uv-bloque-desc">Foro académico donde discutes con tus compañeros y afianzas lo aprendido.</div>
+        </div>
+      </div>
+
+      <div class="uv-bloque-item">
+        <div class="uv-bloque-num uv-num-rojo">7</div>
+        <div class="uv-bloque-content">
+          <div class="uv-bloque-title">Evaluación con integridad <span class="uv-bloque-badge uv-badge-nota">Sumativa</span></div>
+          <div class="uv-bloque-desc">La entrega que sí tiene peso importante en tu nota. Incluye rúbrica visible y declaración de integridad obligatoria.</div>
+        </div>
+      </div>
+
+      <div class="uv-bloque-item">
+        <div class="uv-bloque-num uv-num-dorado">8</div>
+        <div class="uv-bloque-content">
+          <div class="uv-bloque-title">Cierre y autoevaluación <span class="uv-bloque-badge uv-badge-nota">Autoeval</span></div>
+          <div class="uv-bloque-desc">Reflexionas sobre qué aprendiste, resuelves tus dudas finales y avanzas a la siguiente unidad.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="uv-section">
+    <h2>Guía rápida: ¿dónde encuentro...?</h2>
+    <table class="uv-table">
+      <thead>
+        <tr>
+          <th style="width: 45%;">Busco...</th>
+          <th style="width: 55%;">Lo encuentro en...</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>El microcurrículo / syllabus del curso</td>
+          <td>Comienza Aquí → B · Información académica</td>
+        </tr>
+        <tr>
+          <td>Cómo se evalúa el curso</td>
+          <td>Comienza Aquí → B · Información académica → Política de evaluación</td>
+        </tr>
+        <tr>
+          <td>Las normas de convivencia en foros</td>
+          <td>Comienza Aquí → C · Políticas → Netiqueta</td>
+        </tr>
+        <tr>
+          <td>Qué nivel de IA puedo usar</td>
+          <td>Comienza Aquí → C · Políticas → Integridad + IA, o en el Bloque 7 de cada unidad</td>
+        </tr>
+        <tr>
+          <td>Requisitos técnicos mínimos</td>
+          <td>Comienza Aquí → D · Recursos y soporte</td>
+        </tr>
+        <tr>
+          <td>Cómo pedir una adaptación por condición declarada</td>
+          <td>Comienza Aquí → D · Recursos y soporte → Accesibilidad</td>
+        </tr>
+        <tr>
+          <td>Los objetivos de una unidad específica</td>
+          <td>Esa unidad → Bloque 2 · Objetivos de aprendizaje</td>
+        </tr>
+        <tr>
+          <td>Las fechas de entrega de una unidad</td>
+          <td>Esa unidad → Bloque 1 · Inicio de unidad → Calendario</td>
+        </tr>
+        <tr>
+          <td>La rúbrica de una evaluación</td>
+          <td>Esa unidad → Bloque 7 · Evaluación con integridad</td>
+        </tr>
+        <tr>
+          <td>Mi certificado al terminar el curso</td>
+          <td>Cierre del Curso → Certificado de finalización</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="uv-section">
+    <h2>Recorrido sugerido para cada unidad</h2>
+    <div class="uv-card uv-card-verde">
+      <h3>El orden que mejor funciona</h3>
+      <p>
+        Aunque puedes explorar libremente, este orden aprovecha mejor tu
+        tiempo de estudio:
+      </p>
+      <p style="margin-top: 8px;">
+        <strong>1→2→3</strong> para entender qué vas a aprender y por qué
+        &nbsp;·&nbsp; <strong>4</strong> para estudiar el material
+        &nbsp;·&nbsp; <strong>5</strong> para practicar
+        &nbsp;·&nbsp; <strong>6</strong> para discutir con tus compañeros
+        &nbsp;·&nbsp; <strong>7</strong> para la evaluación
+        &nbsp;·&nbsp; <strong>8</strong> para cerrar y avanzar.
+      </p>
+    </div>
+  </section>
+
+  <section class="uv-section">
+    <h2>¿Te perdiste? Así te ubicas</h2>
+    <div class="uv-card uv-card-rojo">
+      <h3>Tres preguntas para orientarte</h3>
+      <p><strong>1. ¿Es sobre reglas del curso?</strong> → Vuelve a Comienza Aquí.</p>
+      <p><strong>2. ¿Es sobre un tema o actividad de una unidad?</strong> → Ve al bloque correspondiente de esa unidad (usa la tabla de arriba).</p>
+      <p><strong>3. ¿Sigues sin encontrarlo?</strong> → Escríbeme por mensajería de Moodle o revisa Comienza Aquí → D · Soporte técnico.</p>
+    </div>
+  </section>
+
+  <footer class="uv-footer">
+    UFPS · UVirtual · {{NOMBRE_CURSO}} · Comienza Aquí · Guía de navegación · v. 1.0
+  </footer>
+
+</div>

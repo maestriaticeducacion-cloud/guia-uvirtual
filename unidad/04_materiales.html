@@ -1,0 +1,208 @@
+<!--
+  PÁGINA MOODLE · UNIDAD · BLOQUE 4 — MATERIALES DE ESTUDIO
+  QM 4.1, 4.2, 4.3 Essential + 4.4, 4.5
+-->
+
+<meta charset="UTF-8">
+<style>
+  .uv-page { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: #1A1D20; line-height: 1.5; max-width: 1000px; margin: 0 auto; }
+  .uv-banner { background: #A32D2D; color: white; padding: 18px 24px; border-radius: 8px 8px 0 0; border-bottom: 4px solid #D4A017; }
+  .uv-banner .uv-kicker { font-size: 11px; letter-spacing: 1px; opacity: 0.85; text-transform: uppercase; margin-bottom: 6px; }
+  .uv-banner h1 { margin: 0; font-size: 24px; font-weight: 700; color: white; }
+  .uv-banner .uv-subtitle { margin-top: 6px; font-size: 14px; font-style: italic; opacity: 0.9; }
+  .uv-tag { display: inline-block; background: #D4A017; color: #1A1D20; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 4px; margin-bottom: 8px; }
+  .uv-section { margin: 24px 0; }
+  .uv-section h2 { color: #1A1D20; font-size: 18px; font-weight: 700; border-left: 4px solid #A32D2D; padding: 4px 0 4px 10px; margin-bottom: 12px; }
+  .uv-card { background: #F9FAFB; border-left: 4px solid #0F4C81; padding: 12px 16px; margin: 12px 0; border-radius: 0 6px 6px 0; }
+  .uv-card.uv-card-rojo { border-left-color: #A32D2D; background: #FFF1F2; }
+  .uv-card.uv-card-dorado { border-left-color: #D4A017; background: #FFF8E1; }
+  .uv-card.uv-card-verde { border-left-color: #1F7A3C; background: #E8F5E9; }
+  .uv-card h3 { margin: 0 0 6px 0; font-size: 14px; }
+  .uv-card.uv-card-rojo h3 { color: #A32D2D; }
+  .uv-card.uv-card-dorado h3 { color: #B8901C; }
+  .uv-card.uv-card-verde h3 { color: #1F7A3C; }
+  .uv-card p { margin: 4px 0; font-size: 14px; }
+  .uv-editable { background: #FFF8E1; border: 1px dashed #D4A017; padding: 2px 8px; border-radius: 3px; color: #B8901C; font-style: italic; }
+  .uv-mat-item { background: white; border: 1px solid #E5E7EB; border-radius: 6px; padding: 10px 14px; margin: 8px 0; }
+  .uv-mat-item .uv-mat-type { display: inline-block; font-size: 10px; padding: 2px 7px; border-radius: 3px; font-weight: 700; margin-bottom: 4px; }
+  .uv-type-libro { background: #A32D2D; color: white; }
+  .uv-type-video { background: #0F4C81; color: white; }
+  .uv-type-paper { background: #1F7A3C; color: white; }
+  .uv-type-web { background: #D4A017; color: #1A1D20; }
+  .uv-type-codigo { background: #1A1D20; color: white; }
+  .uv-mat-item .uv-mat-title { font-weight: 700; font-size: 14px; }
+  .uv-mat-item .uv-mat-meta { font-size: 12px; color: #6B7280; margin-top: 2px; }
+  .uv-mat-item .uv-mat-purpose { font-size: 13px; margin-top: 4px; color: #374151; }
+  .uv-mat-item .uv-mat-time { display: inline-block; background: #F3F4F6; padding: 1px 6px; border-radius: 3px; font-size: 11px; color: #374151; margin-right: 4px; }
+  .uv-mat-item .uv-mat-oa { display: inline-block; background: #FFF1F2; color: #A32D2D; padding: 1px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; margin-right: 4px; }
+  .uv-footer { margin-top: 24px; padding-top: 12px; border-top: 1px solid #E5E7EB; font-size: 11px; color: #6B7280; text-align: center; }
+</style>
+
+<div class="uv-page">
+
+  <header class="uv-banner">
+    <span class="uv-tag">UNIDAD {{NUMERO_UNIDAD}} · MATERIALES · QM 4.1-4.5</span>
+    <div class="uv-kicker">UFPS · UVirtual · {{NOMBRE_CURSO}}</div>
+    <h1>Materiales de estudio</h1>
+    <div class="uv-subtitle">Recursos didácticos seleccionados para alcanzar los objetivos de la unidad</div>
+  </header>
+
+  <section class="uv-section">
+    <h2>Cómo está organizado este bloque</h2>
+    <p style="font-size: 14px;">
+      Los materiales están agrupados en 4 categorías según su propósito.
+      Cada uno indica con qué <strong>objetivo (OA1, OA2…)</strong> se relaciona
+      y el <strong>tiempo estimado</strong> de dedicación.
+    </p>
+  </section>
+
+  <!-- NÚCLEO OBLIGATORIO -->
+  <section class="uv-section">
+    <h2>1. Núcleo obligatorio</h2>
+    <div class="uv-card uv-card-rojo">
+      <h3>Estos materiales son indispensables</h3>
+      <p>Cubren directamente los objetivos de aprendizaje. Estudiarlos NO es opcional. Las evaluaciones se basan en estos recursos.</p>
+    </div>
+
+    <div class="uv-mat-item">
+      <span class="uv-mat-type uv-type-libro">LIBRO / CAPÍTULO</span>
+      <div class="uv-mat-title">
+        <span class="uv-editable">[Título del capítulo o sección]</span>
+      </div>
+      <div class="uv-mat-meta">
+        <span class="uv-editable">[Autor (Año). Libro. Editorial. Capítulo X, pp. XX-XX.]</span>
+      </div>
+      <div class="uv-mat-purpose">
+        <span class="uv-mat-time">⏱ Tiempo: <span class="uv-editable">[X h]</span></span>
+        <span class="uv-mat-oa">OA<span class="uv-editable">[1]</span></span>
+        <span class="uv-editable">[Breve descripción de qué aporta este material al objetivo.]</span>
+      </div>
+    </div>
+
+    <div class="uv-mat-item">
+      <span class="uv-mat-type uv-type-video">VIDEO</span>
+      <div class="uv-mat-title">
+        <span class="uv-editable">[Título del video]</span>
+      </div>
+      <div class="uv-mat-meta">
+        <span class="uv-editable">[URL / plataforma · Autor o canal · Duración]</span>
+      </div>
+      <div class="uv-mat-purpose">
+        <span class="uv-mat-time">⏱ Tiempo: <span class="uv-editable">[X min]</span></span>
+        <span class="uv-mat-oa">OA<span class="uv-editable">[1]</span></span>
+        <span class="uv-editable">[Qué se explica y cómo apoya el aprendizaje.]</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECURSOS MULTIMEDIA -->
+  <section class="uv-section">
+    <h2>2. Recursos multimedia complementarios</h2>
+    <div class="uv-card">
+      <h3>Para profundizar y diversificar</h3>
+      <p>Material multimedia que enriquece el aprendizaje pero no reemplaza el núcleo. Ideal para distintos estilos de aprendizaje.</p>
+    </div>
+
+    <div class="uv-mat-item">
+      <span class="uv-mat-type uv-type-video">VIDEO</span>
+      <div class="uv-mat-title">
+        <span class="uv-editable">[Título del recurso multimedia]</span>
+      </div>
+      <div class="uv-mat-meta">
+        <span class="uv-editable">[URL · Autor · Duración]</span>
+      </div>
+      <div class="uv-mat-purpose">
+        <span class="uv-mat-time">⏱ Tiempo: <span class="uv-editable">[X min]</span></span>
+        <span class="uv-editable">[Qué aporta.]</span>
+      </div>
+    </div>
+
+    <div class="uv-mat-item">
+      <span class="uv-mat-type uv-type-paper">ARTÍCULO / PAPER</span>
+      <div class="uv-mat-title">
+        <span class="uv-editable">[Título del artículo]</span>
+      </div>
+      <div class="uv-mat-meta">
+        <span class="uv-editable">[Apellido, A. (año). Título. Revista, vol(núm), pp. https://doi.org/...]</span>
+      </div>
+      <div class="uv-mat-purpose">
+        <span class="uv-mat-time">⏱ Tiempo: <span class="uv-editable">[X min]</span></span>
+        <span class="uv-editable">[Qué se discute y por qué es relevante.]</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIAL DE PRÁCTICA -->
+  <section class="uv-section">
+    <h2>3. Material de práctica y referencia</h2>
+    <div class="uv-card uv-card-verde">
+      <h3>Para aplicar lo aprendido</h3>
+      <p>Ejemplos resueltos, plantillas, código fuente y casos de estudio que sirven de referencia mientras haces las actividades.</p>
+    </div>
+
+    <div class="uv-mat-item">
+      <span class="uv-mat-type uv-type-codigo">CÓDIGO / PLANTILLA</span>
+      <div class="uv-mat-title">
+        <span class="uv-editable">[Nombre del repositorio o archivo]</span>
+      </div>
+      <div class="uv-mat-meta">
+        <span class="uv-editable">[Enlace GitHub / archivo adjunto al curso]</span>
+      </div>
+      <div class="uv-mat-purpose">
+        <span class="uv-editable">[Qué contiene y cómo usarlo en la práctica.]</span>
+      </div>
+    </div>
+
+    <div class="uv-mat-item">
+      <span class="uv-mat-type uv-type-web">RECURSO WEB</span>
+      <div class="uv-mat-title">
+        <span class="uv-editable">[Nombre del sitio o herramienta]</span>
+      </div>
+      <div class="uv-mat-meta">
+        <span class="uv-editable">[URL]</span>
+      </div>
+      <div class="uv-mat-purpose">
+        <span class="uv-editable">[Para qué se usa.]</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LECTURAS COMPLEMENTARIAS -->
+  <section class="uv-section">
+    <h2>4. Lecturas complementarias (opcionales)</h2>
+    <div class="uv-card uv-card-dorado">
+      <h3>Para los curiosos</h3>
+      <p>Material adicional para estudiantes que quieren profundizar más allá de lo exigido. <strong>NO se evalúa.</strong></p>
+    </div>
+
+    <div class="uv-mat-item">
+      <span class="uv-mat-type uv-type-paper">LECTURA OPCIONAL</span>
+      <div class="uv-mat-title">
+        <span class="uv-editable">[Título]</span>
+      </div>
+      <div class="uv-mat-meta">
+        <span class="uv-editable">[Referencia completa]</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="uv-section">
+    <h2>Sobre la accesibilidad de estos materiales</h2>
+    <div class="uv-card">
+      <p style="font-size: 13px;">
+        Todos los videos del núcleo obligatorio tienen <strong>subtítulos en
+        español</strong>. Los PDFs y documentos producidos para el curso
+        tienen <strong>capa de texto</strong> (no son imágenes escaneadas).
+        Si necesitas <strong>transcripción</strong> de algún recurso o un
+        <strong>formato alternativo</strong>, escríbeme un mensaje y lo
+        coordinamos. Ver también el documento institucional
+        "<a href="#">Guía de Accesibilidad UVirtual</a>" en el Comienza Aquí.
+      </p>
+    </div>
+  </section>
+
+  <footer class="uv-footer">
+    UFPS · UVirtual · {{NOMBRE_CURSO}} · Unidad {{NUMERO_UNIDAD}} · Materiales · v. 1.0
+  </footer>
+
+</div>

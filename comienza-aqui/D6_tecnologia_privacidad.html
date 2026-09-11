@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tecnología y Privacidad — UVirtual UFPS</title>
+<link rel="stylesheet" href="fa/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+.tech-row {
+  display: grid;
+  grid-template-columns: 32mm 1fr 26mm;
+  gap: 2mm;
+  padding: 1.2mm 2.5mm;
+  background: white;
+  border: 1px solid var(--ufps-gris-200);
+  border-radius: 4px;
+  margin-bottom: 1mm;
+  font-size: 8.2pt;
+  align-items: center;
+}
+.tech-name {
+  font-weight: 700;
+  color: var(--ufps-rojo);
+}
+.tech-tag {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 7pt;
+  font-weight: 600;
+  text-align: center;
+}
+.tag-core { background: var(--ufps-rojo); color: white; }
+.tag-support { background: var(--ufps-azul); color: white; }
+.tag-optional { background: var(--ufps-gris-500); color: white; }
+.privacy-card {
+  background: white;
+  border: 1px solid var(--ufps-gris-300);
+  border-top: 3px solid var(--ufps-azul);
+  border-radius: 4px;
+  padding: 2.5mm 3mm;
+  font-size: 8.5pt;
+}
+.privacy-title {
+  font-weight: 700;
+  font-size: 9pt;
+  color: var(--ufps-azul);
+  margin-bottom: 1mm;
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+<header class="doc-header">
+  <span class="qm-tag">QM 6.1-6.4 · Estándar 6</span>
+  <div class="doc-header-meta">UFPS · Unidad de Educación Virtual · Documento Institucional</div>
+  <h1>Tecnología y Privacidad UVirtual</h1>
+  <p class="doc-header-subtitle">Stack tecnológico, integraciones, protección de datos y uso de cookies en cursos virtuales</p>
+</header>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-layer-group"></i></span>
+    Stack tecnológico UVirtual <span class="wcag-badge">QM 6.1</span>
+  </h2>
+  <div class="tech-row">
+    <div class="tech-name">Moodle 4.x</div>
+    <div>LMS principal. Aloja todos los cursos virtuales de pregrado y posgrado. Versión LTS con actualizaciones de seguridad mensuales.</div>
+    <span class="tech-tag tag-core">Núcleo</span>
+  </div>
+  <div class="tech-row">
+    <div class="tech-name">BigBlueButton</div>
+    <div>Videoconferencia integrada en Moodle para clases sincrónicas, asesorías y defensas de trabajos.</div>
+    <span class="tech-tag tag-core">Núcleo</span>
+  </div>
+  <div class="tech-row">
+    <div class="tech-name">Apache Guacamole</div>
+    <div>Acceso remoto a laboratorios virtuales (32 máquinas) sin instalación local de software especializado.</div>
+    <span class="tech-tag tag-core">Núcleo</span>
+  </div>
+  <div class="tech-row">
+    <div class="tech-name">Tiledesk</div>
+    <div>Chat de soporte técnico para estudiantes y docentes. Self-hosted en infraestructura UFPS.</div>
+    <span class="tech-tag tag-support">Soporte</span>
+  </div>
+  <div class="tech-row">
+    <div class="tech-name">WhatsApp Business API</div>
+    <div>Notificaciones automáticas de eventos del curso (entregas, retroalimentación) vía Twilio.</div>
+    <span class="tech-tag tag-support">Soporte</span>
+  </div>
+  <div class="tech-row">
+    <div class="tech-name">Brickfield Accessibility</div>
+    <div>Plugin Moodle para auditoría automática de accesibilidad de los recursos del curso.</div>
+    <span class="tech-tag tag-support">Soporte</span>
+  </div>
+  <div class="tech-row">
+    <div class="tech-name">H5P + Turnitin</div>
+    <div>Contenido interactivo (preguntas en video, simulaciones) y detección de similitud. Opcionales según curso.</div>
+    <span class="tech-tag tag-optional">Opcional</span>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-puzzle-piece"></i></span>
+    Integración con servicios externos <span class="wcag-badge">QM 6.2</span>
+  </h2>
+  <div class="grid-2">
+    <div class="card">
+      <h3 class="card-title"><i class="fa-solid fa-circle-check"></i>Permitido</h3>
+      <p>Enlaces a recursos públicos (YouTube, Vimeo, GitHub, sitios oficiales). Servicios SSO autorizados (Google Workspace UFPS). Editores colaborativos (Google Docs, Overleaf). Repositorios institucionales (SCienTI, biblioteca).</p>
+    </div>
+    <div class="card card-accent-rojo">
+      <h3 class="card-title"><i class="fa-solid fa-triangle-exclamation"></i>Requiere autorización</h3>
+      <p>Servicios que requieren registro adicional del estudiante. Herramientas que recolectan datos personales fuera de UFPS. Plataformas pagas. Servicios que exigen cuenta personal. Pasar por Comité de Tecnología UVirtual.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-shield-halved"></i></span>
+    Privacidad y protección de datos <span class="wcag-badge">QM 6.3</span>
+  </h2>
+  <div class="grid-2">
+    <div class="privacy-card">
+      <div class="privacy-title"><i class="fa-solid fa-file-shield"></i> Marco legal</div>
+      <p>UVirtual cumple la <strong>Ley 1581 de 2012</strong> de protección de datos personales, su Decreto 1377 de 2013 y la política institucional UFPS de tratamiento de datos. Los datos académicos siguen el Reglamento Estudiantil y la Ley 30 de 1992.</p>
+    </div>
+    <div class="privacy-card">
+      <div class="privacy-title"><i class="fa-solid fa-database"></i> Datos que se recolectan</div>
+      <p>Identificación institucional, historial académico, registros de acceso al LMS, calificaciones, entregas de actividades, grabaciones de sesiones sincrónicas (cuando aplique con aviso previo).</p>
+    </div>
+    <div class="privacy-card">
+      <div class="privacy-title"><i class="fa-solid fa-user-shield"></i> Derechos del titular</div>
+      <p>Conocer, actualizar, rectificar y solicitar supresión de datos. Revocar autorización. Acceso a la política completa en <strong>ufps.edu.co/proteccion-datos</strong>.</p>
+    </div>
+    <div class="privacy-card">
+      <div class="privacy-title"><i class="fa-solid fa-server"></i> Almacenamiento</div>
+      <p>Infraestructura propia UFPS y AWS bajo acuerdos de procesamiento de datos. Datos académicos no se ceden a terceros sin consentimiento o mandato legal.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="doc-footer">
+  <span><span class="doc-footer-logo">UVirtual UFPS</span> · Tecnología y Privacidad · Página 1 de 2</span>
+  <span>v. 1.0 · 2026</span>
+</footer>
+
+</div>
+
+<div class="page">
+
+<header class="doc-header">
+  <div class="doc-header-meta">UFPS · UVirtual · Tecnología y Privacidad · Página 2</div>
+  <h1 style="font-size: 18pt;">Cookies, grabaciones y derechos</h1>
+</header>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-cookie-bite"></i></span>
+    Política de cookies <span class="wcag-badge">QM 6.4</span>
+  </h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 25%;">Tipo</th>
+        <th style="width: 45%;">Propósito</th>
+        <th style="width: 30%;">Duración</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Sesión (esenciales)</strong></td>
+        <td>Mantener la sesión activa del usuario en Moodle. Imprescindibles para el funcionamiento.</td>
+        <td>Hasta cerrar el navegador</td>
+      </tr>
+      <tr>
+        <td><strong>Preferencias</strong></td>
+        <td>Recordar idioma, tema visual, configuraciones del LMS.</td>
+        <td>Hasta 1 año</td>
+      </tr>
+      <tr>
+        <td><strong>Analítica institucional</strong></td>
+        <td>Estadísticas de uso del LMS para mejora de servicios (anonimizadas).</td>
+        <td>Hasta 2 años</td>
+      </tr>
+      <tr>
+        <td><strong>Externas (terceros)</strong></td>
+        <td>Solo cuando el docente incrusta contenidos de YouTube/Vimeo y servicios similares.</td>
+        <td>Según política del tercero</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="highlight" style="margin-top: 2mm; font-size: 8.5pt;">
+    UVirtual <strong>no usa cookies publicitarias</strong> ni de rastreo cruzado entre sitios. No vende datos a terceros.
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-video"></i></span>
+    Grabación de sesiones sincrónicas
+  </h2>
+  <div class="grid-2">
+    <div class="card">
+      <h3 class="card-title"><i class="fa-solid fa-bell"></i>Aviso previo</h3>
+      <p>Cuando una clase se grabe, el docente debe avisar al inicio de la sesión. BigBlueButton muestra indicador visible mientras graba. Los estudiantes pueden apagar cámara y micrófono si no desean aparecer.</p>
+    </div>
+    <div class="card">
+      <h3 class="card-title"><i class="fa-solid fa-lock"></i>Acceso restringido</h3>
+      <p>Las grabaciones solo son accesibles para los estudiantes matriculados en el curso y el docente. No se publican en plataformas externas sin autorización de los participantes.</p>
+    </div>
+    <div class="card">
+      <h3 class="card-title"><i class="fa-solid fa-clock-rotate-left"></i>Retención</h3>
+      <p>Las grabaciones se conservan durante el semestre académico y un período adicional de 6 meses para fines de revisión y reclamación, tras lo cual se eliminan.</p>
+    </div>
+    <div class="card">
+      <h3 class="card-title"><i class="fa-solid fa-hand"></i>Derecho a no ser grabado</h3>
+      <p>Estudiantes con razones justificadas pueden solicitar al docente no aparecer en grabaciones. El docente debe acomodar la solicitud (apagar cámara, encuadre alternativo).</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-key"></i></span>
+    Buenas prácticas y contacto
+  </h2>
+  <div class="grid-2">
+    <ul class="icon-list">
+      <li>Usa tu cuenta institucional UFPS, nunca compartas credenciales.</li>
+      <li>Habilita autenticación de dos factores cuando esté disponible.</li>
+      <li>Cierra sesión en computadores compartidos.</li>
+      <li>No publiques contenido del curso en redes sin autorización.</li>
+    </ul>
+    <ul class="icon-list">
+      <li>Reporta inmediatamente cualquier acceso no autorizado.</li>
+      <li>Verifica que los enlaces de UFPS terminen en ufps.edu.co.</li>
+      <li>No descargues software fuera de las recomendaciones del docente.</li>
+      <li>Respeta la privacidad de compañeros en grabaciones.</li>
+    </ul>
+  </div>
+  <div class="highlight" style="margin-top: 2mm; font-size: 8.5pt;">
+    <strong>Contacto para asuntos de privacidad:</strong> ejercicio de derechos de habeas data, reclamos y consultas sobre tratamiento de datos personales en <strong>habeasdata@ufps.edu.co</strong> (Oficina Jurídica UFPS). Plazo de respuesta: Ley 1581/2012, 10 días hábiles prorrogable.
+  </div>
+</section>
+
+<footer class="doc-footer">
+  <span><span class="doc-footer-logo">UVirtual UFPS</span> · Tecnología y Privacidad</span>
+  <span>v. 1.0 · 2026 · Página 2 de 2</span>
+</footer>
+
+</div>
+
+</body>
+</html>

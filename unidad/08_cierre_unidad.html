@@ -1,0 +1,161 @@
+<!--
+  PÁGINA MOODLE · UNIDAD · BLOQUE 8 — CIERRE Y AUTOEVALUACIÓN
+  QM 3.5 + cierre metacognitivo
+-->
+
+<meta charset="UTF-8">
+<style>
+  .uv-page { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: #1A1D20; line-height: 1.5; max-width: 1000px; margin: 0 auto; }
+  .uv-banner { background: #A32D2D; color: white; padding: 18px 24px; border-radius: 8px 8px 0 0; border-bottom: 4px solid #D4A017; }
+  .uv-banner .uv-kicker { font-size: 11px; letter-spacing: 1px; opacity: 0.85; text-transform: uppercase; margin-bottom: 6px; }
+  .uv-banner h1 { margin: 0; font-size: 24px; font-weight: 700; color: white; }
+  .uv-banner .uv-subtitle { margin-top: 6px; font-size: 14px; font-style: italic; opacity: 0.9; }
+  .uv-tag { display: inline-block; background: #D4A017; color: #1A1D20; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 4px; margin-bottom: 8px; }
+  .uv-section { margin: 24px 0; }
+  .uv-section h2 { color: #1A1D20; font-size: 18px; font-weight: 700; border-left: 4px solid #A32D2D; padding: 4px 0 4px 10px; margin-bottom: 12px; }
+  .uv-card { background: #F9FAFB; border-left: 4px solid #0F4C81; padding: 12px 16px; margin: 12px 0; border-radius: 0 6px 6px 0; }
+  .uv-card.uv-card-verde { border-left-color: #1F7A3C; background: #E8F5E9; }
+  .uv-card.uv-card-dorado { border-left-color: #D4A017; background: #FFF8E1; }
+  .uv-card h3 { margin: 0 0 6px 0; font-size: 14px; color: #0F4C81; }
+  .uv-card.uv-card-verde h3 { color: #1F7A3C; }
+  .uv-card.uv-card-dorado h3 { color: #B8901C; }
+  .uv-card p { margin: 4px 0; font-size: 14px; }
+  .uv-editable { background: #FFF8E1; border: 1px dashed #D4A017; padding: 2px 8px; border-radius: 3px; color: #B8901C; font-style: italic; }
+  .uv-recap { background: white; border: 1px solid #E5E7EB; border-radius: 6px; padding: 12px 16px; margin: 10px 0; }
+  .uv-recap-num { display: inline-block; background: #A32D2D; color: white; width: 26px; height: 26px; border-radius: 50%; text-align: center; line-height: 26px; font-weight: 700; font-size: 12px; margin-right: 8px; }
+  .uv-recap-title { font-weight: 600; font-size: 14px; display: inline; }
+  .uv-recap p { font-size: 13px; margin: 6px 0 0 34px; }
+  .uv-checkbox { display: flex; align-items: flex-start; gap: 8px; margin: 6px 0; font-size: 13px; }
+  .uv-checkbox-box { width: 14px; height: 14px; border: 2px solid #6B7280; border-radius: 3px; flex-shrink: 0; margin-top: 2px; }
+  .uv-bridge { background: linear-gradient(135deg, #0F4C81 0%, #1A6BB0 100%); color: white; padding: 18px 24px; border-radius: 8px; margin: 16px 0; }
+  .uv-bridge .uv-bridge-label { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; opacity: 0.8; margin-bottom: 6px; }
+  .uv-bridge .uv-bridge-title { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+  .uv-bridge p { margin: 4px 0; font-size: 13px; opacity: 0.95; }
+  .uv-footer { margin-top: 24px; padding-top: 12px; border-top: 1px solid #E5E7EB; font-size: 11px; color: #6B7280; text-align: center; }
+</style>
+
+<div class="uv-page">
+
+  <header class="uv-banner">
+    <span class="uv-tag">UNIDAD {{NUMERO_UNIDAD}} · CIERRE · QM 3.5</span>
+    <div class="uv-kicker">UFPS · UVirtual · {{NOMBRE_CURSO}}</div>
+    <h1>Cierre y autoevaluación</h1>
+    <div class="uv-subtitle">Reflexión metacognitiva: qué aprendiste, qué falta, qué sigue</div>
+  </header>
+
+  <section class="uv-section">
+    <h2>Resumen de la unidad</h2>
+    <p style="font-size: 14px;">
+      En esta unidad recorrimos los siguientes conceptos y habilidades clave.
+      Si alguno te queda dudoso, regresa al material correspondiente antes de
+      continuar con la siguiente unidad.
+    </p>
+
+    <div class="uv-recap">
+      <span class="uv-recap-num">1</span>
+      <span class="uv-recap-title"><span class="uv-editable">[Concepto / habilidad clave 1]</span></span>
+      <p><span class="uv-editable">[Explicación breve de qué aprendimos sobre este concepto. 2-3 oraciones.]</span></p>
+    </div>
+
+    <div class="uv-recap">
+      <span class="uv-recap-num">2</span>
+      <span class="uv-recap-title"><span class="uv-editable">[Concepto / habilidad clave 2]</span></span>
+      <p><span class="uv-editable">[Explicación breve.]</span></p>
+    </div>
+
+    <div class="uv-recap">
+      <span class="uv-recap-num">3</span>
+      <span class="uv-recap-title"><span class="uv-editable">[Concepto / habilidad clave 3]</span></span>
+      <p><span class="uv-editable">[Explicación breve.]</span></p>
+    </div>
+
+    <div class="uv-recap">
+      <span class="uv-recap-num">4</span>
+      <span class="uv-recap-title"><span class="uv-editable">[Concepto / habilidad clave 4]</span></span>
+      <p><span class="uv-editable">[Explicación breve.]</span></p>
+    </div>
+  </section>
+
+  <section class="uv-section">
+    <h2>Autoevaluación: ¿logré los objetivos?</h2>
+    <div class="uv-card uv-card-verde">
+      <h3>Marca lo que puedes hacer sin ayuda</h3>
+      <p style="font-size: 13px;">
+        Marca solo las casillas que puedas demostrar con confianza. Esto es para
+        ti, no se califica. Si quedan casillas vacías, son señales de dónde
+        reforzar.
+      </p>
+      <div class="uv-checkbox">
+        <div class="uv-checkbox-box"></div>
+        <div>OA1: <span class="uv-editable">[Reformula el OA1 como pregunta de autoevaluación]</span></div>
+      </div>
+      <div class="uv-checkbox">
+        <div class="uv-checkbox-box"></div>
+        <div>OA2: <span class="uv-editable">[Reformula el OA2 como pregunta]</span></div>
+      </div>
+      <div class="uv-checkbox">
+        <div class="uv-checkbox-box"></div>
+        <div>OA3: <span class="uv-editable">[Reformula el OA3 como pregunta]</span></div>
+      </div>
+      <div class="uv-checkbox">
+        <div class="uv-checkbox-box"></div>
+        <div>Puedo explicarle el tema a un compañero usando mis propias palabras.</div>
+      </div>
+      <div class="uv-checkbox">
+        <div class="uv-checkbox-box"></div>
+        <div>Conozco al menos un caso real donde aplicaría lo aprendido.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="uv-section">
+    <h2>Reflexión metacognitiva</h2>
+    <div class="uv-card uv-card-dorado">
+      <h3>Tres preguntas para cerrar (puedes responder en la encuesta o solo pensarlas)</h3>
+      <ol style="font-size: 13px; padding-left: 20px;">
+        <li>¿Qué fue lo más difícil de esta unidad y cómo lo resolviste?</li>
+        <li>¿Qué estrategia de estudio te funcionó mejor (lectura, video, práctica, foro)?</li>
+        <li>¿Qué le dirías a un estudiante que apenas va a empezar esta unidad?</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="uv-section">
+    <h2>Si todavía tienes dudas</h2>
+    <div class="uv-card">
+      <ul style="font-size: 13px;">
+        <li>Vuelve al <strong>bloque 4 (Materiales)</strong> y revisa el recurso que se relacione con el OA que te cueste.</li>
+        <li>Revisa los <strong>aportes del foro</strong>: muchas veces un compañero explica algo de forma más clara.</li>
+        <li>Repite las <strong>actividades de práctica</strong> hasta sentirte cómodo.</li>
+        <li>Escríbeme un mensaje directo si la duda persiste.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="uv-section">
+    <h2>Puente a la siguiente unidad</h2>
+    <div class="uv-bridge">
+      <div class="uv-bridge-label">Próximamente · Unidad <span class="uv-editable">[N+1]</span></div>
+      <div class="uv-bridge-title"><span class="uv-editable">[Título de la siguiente unidad]</span></div>
+      <p>
+        <span class="uv-editable">[Conecta lo que viste con lo que viene: qué de esta unidad será base para la siguiente, qué nuevos conceptos verás, qué deberías repasar antes de comenzar.]</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="uv-section">
+    <h2>Encuesta de satisfacción de la unidad</h2>
+    <div class="uv-card">
+      <p style="font-size: 13px;">
+        Justo debajo de esta página encontrarás una encuesta corta y anónima.
+        Tu feedback me ayuda a mejorar la unidad para futuros estudiantes.
+        <strong>Tarda 2 minutos.</strong>
+      </p>
+    </div>
+  </section>
+
+  <footer class="uv-footer">
+    UFPS · UVirtual · {{NOMBRE_CURSO}} · Unidad {{NUMERO_UNIDAD}} · Cierre · v. 1.0
+  </footer>
+
+</div>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>UVirtual UFPS · Sitio del curso</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #F3F4F6;
+    color: #1A1D20;
+    margin: 0;
+    padding: 0;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 32px 20px 60px; }
+  header {
+    background: #A32D2D;
+    color: white;
+    padding: 28px 32px;
+    border-radius: 10px;
+    border-bottom: 5px solid #D4A017;
+    margin-bottom: 28px;
+  }
+  header .kicker { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; opacity: .85; margin-bottom: 6px; }
+  header h1 { margin: 0 0 6px 0; font-size: 28px; }
+  header p { margin: 0; opacity: .92; font-size: 15px; font-style: italic; }
+
+  .section-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 32px 0 14px;
+    padding-left: 12px;
+    border-left: 5px solid #A32D2D;
+  }
+  .subblock {
+    background: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+  .subblock-header {
+    background: #A32D2D;
+    color: white;
+    padding: 10px 18px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .subblock-body { padding: 6px 0; }
+  .link-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 18px;
+    border-bottom: 1px solid #F3F4F6;
+    text-decoration: none;
+    color: inherit;
+    transition: background .15s;
+  }
+  .link-row:last-child { border-bottom: none; }
+  .link-row:hover { background: #FFF1F2; }
+  .link-code {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #F3F4F6;
+    color: #A32D2D;
+    font-weight: 700;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .link-code.unidad { background: #DDEBFE; color: #0F4C81; }
+  .link-title { font-weight: 600; font-size: 14.5px; }
+  .link-desc { font-size: 12.5px; color: #6B7280; margin-top: 1px; }
+  .no-file {
+    padding: 12px 18px;
+    font-size: 13px;
+    color: #9CA3AF;
+    font-style: italic;
+    border-bottom: 1px solid #F3F4F6;
+  }
+  .unit-block {
+    background: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 4px 0;
+    margin-bottom: 24px;
+  }
+  .note {
+    background: #FFF8E1;
+    border-left: 4px solid #D4A017;
+    padding: 12px 16px;
+    border-radius: 0 8px 8px 0;
+    font-size: 13.5px;
+    margin: 20px 0;
+    color: #6B5300;
+  }
+  footer {
+    text-align: center;
+    font-size: 12px;
+    color: #9CA3AF;
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid #E5E7EB;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">UFPS · Unidad de Educación Virtual</div>
+    <h1>Sitio del curso — {{NOMBRE_CURSO}}</h1>
+    <p>Todas las páginas de Comienza Aquí y de la Unidad Modelo, listas para publicar o consultar</p>
+  </header>
+
+  <div class="section-title">📍 Comienza Aquí</div>
+
+  <div class="subblock">
+    <div class="subblock-header">A · Bienvenida y orientación</div>
+    <div class="subblock-body">
+      <div class="no-file">A1 · Video de bienvenida del docente — se sube directo en Moodle, no es un archivo de este sitio.</div>
+      <a class="link-row" href="comienza-aqui/A2_guia_navegacion.html">
+        <div class="link-code">A2</div>
+        <div><div class="link-title">Guía de navegación y mapa del curso</div><div class="link-desc">Cómo se organiza el aula y los 8 bloques de cada unidad</div></div>
+      </a>
+      <div class="no-file">A3 · Foro de presentación del estudiante — actividad viva de Moodle, no es un archivo estático.</div>
+    </div>
+  </div>
+
+  <div class="subblock">
+    <div class="subblock-header">B · Información académica</div>
+    <div class="subblock-body">
+      <div class="no-file">B1 · Microcurrículo + Syllabus — plantilla institucional pendiente de generar (formato FO-DOC-16-QM).</div>
+      <a class="link-row" href="comienza-aqui/B2_como_se_evalua.html">
+        <div class="link-code">B2</div>
+        <div><div class="link-title">Cómo se evalúa este curso</div><div class="link-desc">Resumen para el estudiante: pesos, escala, IA, integridad, reclamos</div></div>
+      </a>
+      <a class="link-row" href="comienza-aqui/B3_conocimientos_previos.html">
+        <div class="link-code">B3</div>
+        <div><div class="link-title">Conocimientos previos requeridos</div><div class="link-desc">Capacidades esperadas al iniciar el curso</div></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="subblock">
+    <div class="subblock-header">C · Políticas y lineamientos</div>
+    <div class="subblock-body">
+      <a class="link-row" href="comienza-aqui/C1_netiqueta.html">
+        <div class="link-code">C1</div>
+        <div><div class="link-title">Netiqueta y comunicación</div><div class="link-desc">Reglas de conducta en foros, mensajería y sincrónicos</div></div>
+      </a>
+      <a class="link-row" href="comienza-aqui/C2_integridad_ia.html">
+        <div class="link-code">C2</div>
+        <div><div class="link-title">Integridad académica y uso de IA</div><div class="link-desc">Matriz de 5 niveles de IA permitida</div></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="subblock">
+    <div class="subblock-header">D · Recursos y soporte</div>
+    <div class="subblock-body">
+      <a class="link-row" href="comienza-aqui/D1_requisitos_tecnicos.html">
+        <div class="link-code">D1</div>
+        <div><div class="link-title">Requisitos técnicos mínimos</div><div class="link-desc">Hardware, software, conexión</div></div>
+      </a>
+      <a class="link-row" href="comienza-aqui/D2_competencias_digitales.html">
+        <div class="link-code">D2</div>
+        <div><div class="link-title">Competencias digitales esperadas</div><div class="link-desc">Marco DigComp 2.2</div></div>
+      </a>
+      <a class="link-row" href="comienza-aqui/D3_accesibilidad_adaptaciones.html">
+        <div class="link-code">D3</div>
+        <div><div class="link-title">Accesibilidad y adaptaciones en este curso</div><div class="link-desc">Qué ya está construido y cómo pedir un ajuste</div></div>
+      </a>
+      <a class="link-row" href="comienza-aqui/D4_D5_recursos_soporte_estudiante.html">
+        <div class="link-code">D4-D5</div>
+        <div><div class="link-title">Recursos institucionales + Soporte técnico y bienestar</div><div class="link-desc">Biblioteca, tutoría, labs, mesa de ayuda, bienestar</div></div>
+      </a>
+      <a class="link-row" href="comienza-aqui/D6_tecnologia_privacidad.html">
+        <div class="link-code">D6</div>
+        <div><div class="link-title">Tecnología, cookies y privacidad</div><div class="link-desc">Stack tecnológico y protección de datos</div></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="note">
+    Los documentos de gobierno institucional (Política de Evaluación completa, Microcurrículo, Guías de construcción para el docente) no están en este sitio porque no son lectura para el estudiante. Viven aparte, junto a las plantillas de diseño instruccional.
+  </div>
+
+  <div class="section-title">📘 Unidad Modelo</div>
+  <p style="font-size: 13.5px; color: #6B7280; margin-top: -8px;">
+    Estos 8 bloques se repiten en cada unidad del curso. Duplica esta plantilla y reemplaza los marcadores para cada unidad real.
+  </p>
+
+  <div class="unit-block">
+    <a class="link-row" href="unidad/01_inicio_unidad.html"><div class="link-code unidad">1</div><div><div class="link-title">Inicio de unidad</div><div class="link-desc">Bienvenida, contexto y calendario</div></div></a>
+    <a class="link-row" href="unidad/02_objetivos.html"><div class="link-code unidad">2</div><div><div class="link-title">Objetivos de aprendizaje</div><div class="link-desc">Objetivo general + específicos con verbos Bloom</div></div></a>
+    <a class="link-row" href="unidad/03_alineacion_qm.html"><div class="link-code unidad">3</div><div><div class="link-title">Mapa de alineación QM</div><div class="link-desc">Objetivo → material → actividad → evaluación</div></div></a>
+    <a class="link-row" href="unidad/04_materiales.html"><div class="link-code unidad">4</div><div><div class="link-title">Materiales de estudio</div><div class="link-desc">Núcleo, multimedia, práctica, complementarios</div></div></a>
+    <a class="link-row" href="unidad/05_practica.html"><div class="link-code unidad">5</div><div><div class="link-title">Actividades de práctica</div><div class="link-desc">Talleres y autoevaluaciones formativas</div></div></a>
+    <a class="link-row" href="unidad/06_sintesis_discusion.html"><div class="link-code unidad">6</div><div><div class="link-title">Síntesis y discusión</div><div class="link-desc">Foro académico con pregunta detonadora</div></div></a>
+    <a class="link-row" href="unidad/07_evaluacion.html"><div class="link-code unidad">7</div><div><div class="link-title">Evaluación con integridad</div><div class="link-desc">Rúbrica, nivel de IA, declaración obligatoria</div></div></a>
+    <a class="link-row" href="unidad/08_cierre_unidad.html"><div class="link-code unidad">8</div><div><div class="link-title">Cierre y autoevaluación</div><div class="link-desc">Reflexión metacognitiva y puente a la siguiente unidad</div></div></a>
+    <a class="link-row" href="unidad/etiquetas_separadoras.html"><div class="link-code unidad">★</div><div><div class="link-title">Etiquetas separadoras (botones rojos)</div><div class="link-desc">Código HTML para los divisores entre bloques</div></div></a>
+  </div>
+
+  <footer>
+    UFPS · UVirtual · Sitio del curso · Rojo institucional #A32D2D · v. 1.0 · 2026
+  </footer>
+
+</div>
+</body>
+</html>

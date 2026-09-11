@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Integridad Académica y Uso de IA Generativa — UVirtual UFPS</title>
+<link rel="stylesheet" href="fa/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+.ia-matrix {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--ufps-gris-300);
+}
+.ia-row {
+  display: grid;
+  grid-template-columns: 14mm 1fr 22mm;
+  border-bottom: 1px solid var(--ufps-gris-300);
+  font-size: 9pt;
+}
+.ia-row:last-child { border-bottom: none; }
+.ia-level {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 11pt;
+  color: white;
+}
+.ia-level-1 { background: var(--ufps-verde); }
+.ia-level-2 { background: #8FBE3D; color: var(--ufps-negro); }
+.ia-level-3 { background: var(--ufps-dorado); color: var(--ufps-negro); }
+.ia-level-4 { background: var(--ufps-rojo-claro); }
+.ia-level-5 { background: var(--ufps-rojo); }
+.ia-desc { padding: 3mm 4mm; }
+.ia-desc-title { font-weight: 700; font-size: 9.5pt; margin: 0 0 1mm; }
+.ia-desc p { margin: 0; font-size: 8.5pt; color: var(--ufps-gris-700); }
+.ia-citation { padding: 3mm 2mm; font-size: 8pt; text-align: center; display: flex; align-items: center; justify-content: center; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+<header class="doc-header">
+  <span class="qm-tag">QM SRS 1.4 + 3.6 · Essential</span>
+  <div class="doc-header-meta">UFPS · Unidad de Educación Virtual · Documento Institucional</div>
+  <h1>Integridad Académica y Uso de IA Generativa</h1>
+  <p class="doc-header-subtitle">Marco institucional UVirtual para el uso ético de herramientas de inteligencia artificial en procesos formativos</p>
+</header>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-scale-balanced"></i></span>
+    Principios fundamentales
+  </h2>
+  <div class="grid-3">
+    <div class="card card-accent-rojo">
+      <h3 class="card-title"><i class="fa-solid fa-fingerprint"></i>Autoría</h3>
+      <p>Lo que entregas debe representar fielmente tu trabajo y aprendizaje. La IA es una herramienta, no el autor.</p>
+    </div>
+    <div class="card card-accent-rojo">
+      <h3 class="card-title"><i class="fa-solid fa-eye"></i>Transparencia</h3>
+      <p>Si usas IA, debes decirlo. La ocultación es la frontera entre uso responsable y deshonestidad.</p>
+    </div>
+    <div class="card card-accent-rojo">
+      <h3 class="card-title"><i class="fa-solid fa-brain"></i>Aprendizaje real</h3>
+      <p>La IA puede acelerar tareas pero no reemplaza la comprensión. Si no entiendes lo que entregas, no aprendiste.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-layer-group"></i></span>
+    Matriz de escenarios — Cinco niveles de uso de IA
+  </h2>
+  <p style="font-size: 9.5pt; color: var(--ufps-gris-700); margin: 0 0 3mm;">
+    Cada docente debe declarar explícitamente cuál nivel aplica para cada actividad evaluativa de su curso. En ausencia de declaración, se aplica por defecto el <strong>Nivel 3</strong>.
+  </p>
+  <div class="ia-matrix">
+
+    <div class="ia-row">
+      <div class="ia-level ia-level-1">N1</div>
+      <div class="ia-desc">
+        <h4 class="ia-desc-title">IA totalmente prohibida</h4>
+        <p>Exámenes presenciales, defensas orales, evaluaciones que miden conocimiento sin asistencia. El estudiante demuestra dominio autónomo.</p>
+      </div>
+      <div class="ia-citation"><span class="badge badge-verde">No aplica citación</span></div>
+    </div>
+
+    <div class="ia-row">
+      <div class="ia-level ia-level-2">N2</div>
+      <div class="ia-desc">
+        <h4 class="ia-desc-title">IA solo como tutor (consultar, no producir)</h4>
+        <p>Puedes preguntarle conceptos, pedir explicaciones, aclarar dudas. NO puedes copiar nada de lo que genere. Todo lo que entregues debe escribirse por ti desde cero.</p>
+      </div>
+      <div class="ia-citation"><span class="badge badge-dorado">Citación opcional</span></div>
+    </div>
+
+    <div class="ia-row">
+      <div class="ia-level ia-level-3">N3</div>
+      <div class="ia-desc">
+        <h4 class="ia-desc-title">IA como asistente puntual (default institucional)</h4>
+        <p>Permitido para depurar código, corregir ortografía, sugerir sinónimos, generar ideas iniciales. El producto final debe ser mayoritariamente tuyo. Citación obligatoria.</p>
+      </div>
+      <div class="ia-citation"><span class="badge badge-dorado">Citación obligatoria</span></div>
+    </div>
+
+    <div class="ia-row">
+      <div class="ia-level ia-level-4">N4</div>
+      <div class="ia-desc">
+        <h4 class="ia-desc-title">IA como colaborador (uso amplio regulado)</h4>
+        <p>Permitido generar borradores, código base, análisis preliminares. El estudiante debe revisar, validar, modificar y demostrar comprensión. Citación detallada con prompts.</p>
+      </div>
+      <div class="ia-citation"><span class="badge badge-rojo-claro">Citación detallada</span></div>
+    </div>
+
+    <div class="ia-row">
+      <div class="ia-level ia-level-5">N5</div>
+      <div class="ia-desc">
+        <h4 class="ia-desc-title">IA como objeto de estudio</h4>
+        <p>Actividad cuyo propósito es analizar, comparar o evaluar herramientas de IA. El uso es no solo permitido sino esperado. Documentar metodología completa.</p>
+      </div>
+      <div class="ia-citation"><span class="badge badge-rojo">Documentación completa</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-quote-right"></i></span>
+    Cómo citar el uso de IA
+  </h2>
+  <div class="highlight">
+    <strong>Plantilla institucional UVirtual de citación de IA:</strong><br>
+    "En este trabajo se usó <em>[nombre y versión: ej. ChatGPT-5, Claude Opus 4.7, Gemini 2.5]</em> para <em>[propósito específico: ej. depurar el método calcularPromedio, corregir redacción de la introducción]</em>. La interacción ocurrió el <em>[fecha]</em>. El prompt principal fue: <em>'[texto del prompt]'</em>. La salida fue <em>[revisada / modificada / verificada]</em> por el estudiante y validada contra <em>[fuente académica / pruebas / criterio]</em>."
+  </div>
+</section>
+
+</div>
+
+<div class="page">
+
+<header class="doc-header">
+  <div class="doc-header-meta">UFPS · UVirtual · Integridad Académica · Página 2</div>
+  <h1 style="font-size: 18pt;">Conductas, consecuencias y procedimiento</h1>
+</header>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-triangle-exclamation"></i></span>
+    Conductas que constituyen fraude académico
+  </h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 30%;">Conducta</th>
+        <th style="width: 70%;">Definición operativa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Plagio directo</strong></td>
+        <td>Copiar texto, código o ideas sin citar la fuente original (sea humana o IA).</td>
+      </tr>
+      <tr>
+        <td><strong>Plagio mosaico</strong></td>
+        <td>Combinar fragmentos de varias fuentes sin atribución, aunque cada fragmento sea corto.</td>
+      </tr>
+      <tr>
+        <td><strong>Auto-plagio</strong></td>
+        <td>Reutilizar trabajos propios ya entregados en otras asignaturas sin declararlo.</td>
+      </tr>
+      <tr>
+        <td><strong>Uso oculto de IA</strong></td>
+        <td>Usar IA cuando está permitida pero no declararlo, o usarla cuando está prohibida.</td>
+      </tr>
+      <tr>
+        <td><strong>Suplantación</strong></td>
+        <td>Que otra persona realice una actividad evaluativa en lugar del estudiante registrado.</td>
+      </tr>
+      <tr>
+        <td><strong>Colusión no autorizada</strong></td>
+        <td>Colaborar con otros en actividades declaradas como individuales.</td>
+      </tr>
+      <tr>
+        <td><strong>Falsificación de datos</strong></td>
+        <td>Inventar resultados, citas, fuentes o evidencias en trabajos académicos.</td>
+      </tr>
+      <tr>
+        <td><strong>Sabotaje</strong></td>
+        <td>Obstaculizar deliberadamente el trabajo o evaluación de otros estudiantes.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-gavel"></i></span>
+    Consecuencias graduales
+  </h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-number">1</div>
+      <div class="step-title">Llamado de atención</div>
+      <p>Primer incidente menor con explicación pedagógica y oportunidad de rehacer la actividad.</p>
+    </div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <div class="step-title">Nota cero</div>
+      <p>Incidente reiterado o de mayor gravedad. La actividad afectada se califica con cero.</p>
+    </div>
+    <div class="step">
+      <div class="step-number">3</div>
+      <div class="step-title">Reporte formal</div>
+      <p>Notificación a la coordinación del programa y al Consejo de Facultad correspondiente.</p>
+    </div>
+    <div class="step">
+      <div class="step-number">4</div>
+      <div class="step-title">Proceso disciplinario</div>
+      <p>Aplicación del Reglamento Estudiantil UFPS, con sanciones que pueden incluir pérdida del semestre.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-list-check"></i></span>
+    Compromiso del estudiante
+  </h2>
+  <div class="card card-accent-azul">
+    <p style="margin: 0; font-style: italic;">
+      "Al matricularme en un curso de UVirtual, me comprometo a respetar los principios de integridad académica de la UFPS, declarar honestamente el uso de cualquier herramienta de IA según el nivel definido por el docente, citar las fuentes consultadas, y entregar trabajos que reflejen genuinamente mi aprendizaje. Reconozco que el incumplimiento puede acarrear sanciones académicas y disciplinarias."
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-book-open"></i></span>
+    Marco normativo
+  </h2>
+  <ul class="icon-list">
+    <li>Reglamento Estudiantil UFPS (vigente).</li>
+    <li>Ley 23 de 1982 — Derechos de autor en Colombia.</li>
+    <li>Política institucional de integridad académica UFPS.</li>
+    <li>Quality Matters Higher Education Rubric, 7ª Edición — SRS 1.4 y 3.6.</li>
+  </ul>
+</section>
+
+<footer class="doc-footer">
+  <span><span class="doc-footer-logo">UVirtual UFPS</span> · Integridad Académica y Uso de IA</span>
+  <span>v. 1.0 · 2026 · Página 2 de 2</span>
+</footer>
+
+</div>
+
+</body>
+</html>

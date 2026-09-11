@@ -1,0 +1,185 @@
+<!--
+  PÁGINA MOODLE · UNIDAD · BLOQUE 2 — OBJETIVOS DE APRENDIZAJE
+  QM 2.1, 2.2, 2.3 Essential
+-->
+
+<meta charset="UTF-8">
+<style>
+  .uv-page { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: #1A1D20; line-height: 1.5; max-width: 1000px; margin: 0 auto; }
+  .uv-banner { background: #A32D2D; color: white; padding: 18px 24px; border-radius: 8px 8px 0 0; border-bottom: 4px solid #D4A017; }
+  .uv-banner .uv-kicker { font-size: 11px; letter-spacing: 1px; opacity: 0.85; text-transform: uppercase; margin-bottom: 6px; }
+  .uv-banner h1 { margin: 0; font-size: 24px; font-weight: 700; color: white; }
+  .uv-banner .uv-subtitle { margin-top: 6px; font-size: 14px; font-style: italic; opacity: 0.9; }
+  .uv-tag { display: inline-block; background: #D4A017; color: #1A1D20; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 4px; margin-bottom: 8px; }
+  .uv-section { margin: 24px 0; }
+  .uv-section h2 { color: #1A1D20; font-size: 18px; font-weight: 700; border-left: 4px solid #A32D2D; padding: 4px 0 4px 10px; margin-bottom: 12px; }
+  .uv-card { background: #F9FAFB; border-left: 4px solid #0F4C81; padding: 12px 16px; margin: 12px 0; border-radius: 0 6px 6px 0; }
+  .uv-card.uv-card-rojo { border-left-color: #A32D2D; background: #FFF1F2; }
+  .uv-card.uv-card-dorado { border-left-color: #D4A017; background: #FFF8E1; }
+  .uv-card h3 { margin: 0 0 6px 0; font-size: 14px; color: #0F4C81; }
+  .uv-card.uv-card-rojo h3 { color: #A32D2D; }
+  .uv-card.uv-card-dorado h3 { color: #B8901C; }
+  .uv-card p { margin: 4px 0; font-size: 14px; }
+  .uv-editable { background: #FFF8E1; border: 1px dashed #D4A017; padding: 2px 8px; border-radius: 3px; color: #B8901C; font-style: italic; }
+  .uv-objective { background: white; border: 1px solid #E5E7EB; border-left: 5px solid #A32D2D; padding: 12px 16px; margin: 10px 0; border-radius: 0 6px 6px 0; }
+  .uv-objective .uv-obj-id { display: inline-block; background: #A32D2D; color: white; font-weight: 700; padding: 3px 10px; border-radius: 4px; font-size: 12px; margin-bottom: 6px; }
+  .uv-objective .uv-bloom { display: inline-block; background: #0F4C81; color: white; font-size: 11px; padding: 2px 8px; border-radius: 3px; margin-left: 6px; }
+  .uv-objective p { margin: 4px 0; font-size: 14px; }
+  table.uv-table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+  table.uv-table th { background: #A32D2D; color: white; padding: 10px 12px; text-align: left; }
+  table.uv-table td { padding: 8px 12px; border-bottom: 1px solid #E5E7EB; vertical-align: top; }
+  .uv-footer { margin-top: 24px; padding-top: 12px; border-top: 1px solid #E5E7EB; font-size: 11px; color: #6B7280; text-align: center; }
+  .uv-good { color: #1F7A3C; font-weight: 600; }
+  .uv-bad { color: #A32D2D; font-weight: 600; text-decoration: line-through; }
+</style>
+
+<div class="uv-page">
+
+  <header class="uv-banner">
+    <span class="uv-tag">UNIDAD {{NUMERO_UNIDAD}} · OBJETIVOS · QM 2.1-2.3 ESSENTIAL</span>
+    <div class="uv-kicker">UFPS · UVirtual · {{NOMBRE_CURSO}}</div>
+    <h1>Objetivos de aprendizaje</h1>
+    <div class="uv-subtitle">Lo que sabrás hacer al finalizar esta unidad</div>
+  </header>
+
+  <section class="uv-section">
+    <h2>Objetivo general de la unidad</h2>
+    <div class="uv-card uv-card-rojo">
+      <h3>OG · Objetivo general</h3>
+      <p>
+        <span class="uv-editable">[Redacta UN objetivo general que englobe toda la unidad. Usa el formato: verbo medible + contenido + condición/contexto.]</span>
+      </p>
+      <p style="font-size: 12px; font-style: italic; color: #6B7280; margin-top: 8px;">
+        Ejemplo: "Al finalizar esta unidad, el estudiante diseñará e implementará una capa de persistencia con patrón Repository en una aplicación Java/JPA, demostrando separación de responsabilidades y validación con pruebas unitarias."
+      </p>
+    </div>
+  </section>
+
+  <section class="uv-section">
+    <h2>Objetivos específicos</h2>
+    <p style="font-size: 14px;">
+      Estos son los logros concretos que deberás demostrar. Cada uno se conecta
+      con materiales, actividades y evaluaciones específicas (ver bloque
+      "Mapa de alineación QM").
+    </p>
+
+    <div class="uv-objective">
+      <span class="uv-obj-id">OA1</span><span class="uv-bloom">Bloom: Aplicar</span>
+      <p>
+        Al finalizar la unidad, el estudiante
+        <span class="uv-editable">[verbo en futuro + lo que producirá + condición]</span>.
+      </p>
+      <p style="font-size: 12px; color: #6B7280;">
+        Ejemplo: "implementará un Repository genérico en Java/JPA siguiendo los principios SOLID, validado con al menos 3 pruebas unitarias que cubran inserción, búsqueda y borrado."
+      </p>
+    </div>
+
+    <div class="uv-objective">
+      <span class="uv-obj-id">OA2</span><span class="uv-bloom">Bloom: Analizar</span>
+      <p>
+        <span class="uv-editable">[Segundo objetivo específico]</span>.
+      </p>
+    </div>
+
+    <div class="uv-objective">
+      <span class="uv-obj-id">OA3</span><span class="uv-bloom">Bloom: Evaluar</span>
+      <p>
+        <span class="uv-editable">[Tercer objetivo específico]</span>.
+      </p>
+    </div>
+
+    <p style="font-size: 12px; color: #6B7280; font-style: italic;">
+      Recomendado: 3-5 objetivos específicos por unidad. Demasiados se diluyen,
+      muy pocos no cubren bien el alcance.
+    </p>
+  </section>
+
+  <section class="uv-section">
+    <h2>¿Cómo redactar bien un objetivo? — Guía rápida</h2>
+
+    <div class="uv-card uv-card-dorado">
+      <h3>Verbos medibles · Taxonomía de Bloom</h3>
+      <table class="uv-table">
+        <thead>
+          <tr>
+            <th style="width: 20%;">Nivel</th>
+            <th style="width: 40%;">Verbos recomendados</th>
+            <th style="width: 40%;">Verbos a evitar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Recordar</strong></td>
+            <td class="uv-good">identificar, listar, definir, nombrar</td>
+            <td class="uv-bad">saber, conocer</td>
+          </tr>
+          <tr>
+            <td><strong>Comprender</strong></td>
+            <td class="uv-good">explicar, resumir, parafrasear, clasificar</td>
+            <td class="uv-bad">entender, comprender</td>
+          </tr>
+          <tr>
+            <td><strong>Aplicar</strong></td>
+            <td class="uv-good">implementar, calcular, resolver, demostrar</td>
+            <td class="uv-bad">usar (sin contexto)</td>
+          </tr>
+          <tr>
+            <td><strong>Analizar</strong></td>
+            <td class="uv-good">comparar, diferenciar, descomponer, examinar</td>
+            <td class="uv-bad">ver, mirar</td>
+          </tr>
+          <tr>
+            <td><strong>Evaluar</strong></td>
+            <td class="uv-good">justificar, criticar, valorar, defender</td>
+            <td class="uv-bad">opinar (sin criterio)</td>
+          </tr>
+          <tr>
+            <td><strong>Crear</strong></td>
+            <td class="uv-good">diseñar, construir, formular, planificar</td>
+            <td class="uv-bad">hacer (genérico)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="uv-card uv-card-rojo">
+      <h3>Fórmula recomendada</h3>
+      <p style="font-size: 15px;">
+        <strong>Verbo medible + Contenido + Condición/Contexto</strong>
+      </p>
+      <p style="font-size: 13px;">
+        Ejemplo bueno: "<span class="uv-good">implementará</span> un patrón
+        Repository en JPA <em>siguiendo los principios SOLID</em>, validado con
+        <em>al menos 3 pruebas unitarias</em>."
+      </p>
+      <p style="font-size: 13px;">
+        Ejemplo malo: "el estudiante <span class="uv-bad">entenderá</span>
+        el patrón Repository." → no se puede observar ni medir.
+      </p>
+    </div>
+  </section>
+
+  <section class="uv-section">
+    <h2>Cómo se relacionan con los resultados del programa</h2>
+    <p style="font-size: 14px;">
+      Los objetivos de esta unidad contribuyen al perfil de egreso de
+      <strong><span class="uv-editable">[nombre del programa]</span></strong>.
+      Específicamente, aportan a los siguientes resultados:
+    </p>
+    <ul style="font-size: 14px;">
+      <li>
+        <strong>RA-<span class="uv-editable">[N]</span>:</strong>
+        <span class="uv-editable">[Resultado de aprendizaje del programa]</span>
+      </li>
+      <li>
+        <strong>RA-<span class="uv-editable">[N]</span>:</strong>
+        <span class="uv-editable">[Otro resultado]</span>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="uv-footer">
+    UFPS · UVirtual · {{NOMBRE_CURSO}} · Unidad {{NUMERO_UNIDAD}} · Objetivos · v. 1.0
+  </footer>
+
+</div>

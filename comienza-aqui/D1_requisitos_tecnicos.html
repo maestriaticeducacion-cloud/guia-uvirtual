@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Requisitos Técnicos Mínimos — UVirtual UFPS</title>
+<link rel="stylesheet" href="fa/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+.spec-card {
+  background: white;
+  border: 1px solid var(--ufps-gris-300);
+  border-radius: 8px;
+  padding: 4mm;
+  position: relative;
+  overflow: hidden;
+}
+.spec-card-header {
+  display: flex;
+  align-items: center;
+  gap: 2mm;
+  margin-bottom: 3mm;
+  padding-bottom: 2mm;
+  border-bottom: 2px solid var(--ufps-rojo);
+}
+.spec-icon {
+  width: 8mm;
+  height: 8mm;
+  background: var(--ufps-rojo);
+  color: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12pt;
+}
+.spec-title {
+  font-weight: 700;
+  font-size: 11pt;
+  color: var(--ufps-negro);
+}
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5mm 0;
+  border-bottom: 1px solid var(--ufps-gris-100);
+  font-size: 9pt;
+}
+.spec-row:last-child { border-bottom: none; }
+.spec-label { color: var(--ufps-gris-700); font-weight: 500; }
+.spec-value { font-weight: 600; color: var(--ufps-negro); text-align: right; }
+.spec-tier { font-size: 7.5pt; padding: 1px 6px; border-radius: 8px; margin-right: 3mm; font-weight: 700; }
+.tier-min { background: var(--ufps-rojo-superficie); color: var(--ufps-rojo-hover); }
+.tier-rec { background: #E8F5EC; color: var(--ufps-verde); }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+<header class="doc-header">
+  <span class="qm-tag">QM SRS 1.5 · Essential</span>
+  <div class="doc-header-meta">UFPS · Unidad de Educación Virtual · Documento Institucional</div>
+  <h1>Requisitos Técnicos Mínimos</h1>
+  <p class="doc-header-subtitle">Lo que necesitas para acceder y participar exitosamente en los cursos virtuales UVirtual</p>
+</header>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-circle-info"></i></span>
+    Cómo leer este documento
+  </h2>
+  <div class="grid-2">
+    <div class="card card-accent-rojo">
+      <h3 class="card-title"><i class="fa-solid fa-circle-exclamation"></i>Mínimo (Min)</h3>
+      <p>Configuración mínima para que el curso funcione. Permite navegación, lectura y entrega de actividades básicas.</p>
+    </div>
+    <div class="card card-accent-verde">
+      <h3 class="card-title"><i class="fa-solid fa-circle-check"></i>Recomendado (Rec)</h3>
+      <p>Configuración óptima para una experiencia fluida: videoconferencias, laboratorios virtuales, edición de medios.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-laptop"></i></span>
+    Hardware
+  </h2>
+  <div class="grid-2">
+    <div class="spec-card">
+      <div class="spec-card-header">
+        <div class="spec-icon"><i class="fa-solid fa-microchip"></i></div>
+        <div class="spec-title">Computador</div>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label"><span class="spec-tier tier-min">MIN</span>Procesador</span>
+        <span class="spec-value">Dual-core 2.0 GHz</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label"><span class="spec-tier tier-rec">REC</span>Procesador</span>
+        <span class="spec-value">Quad-core 2.5+ GHz</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label"><span class="spec-tier tier-min">MIN</span>RAM</span>
+        <span class="spec-value">4 GB</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label"><span class="spec-tier tier-rec">REC</span>RAM</span>
+        <span class="spec-value">8 GB o más</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label"><span class="spec-tier tier-min">MIN</span>Almacenamiento</span>
+        <span class="spec-value">50 GB libres</span>
+      </div>
+    </div>
+
+    <div class="spec-card">
+      <div class="spec-card-header">
+        <div class="spec-icon"><i class="fa-solid fa-display"></i></div>
+        <div class="spec-title">Pantalla y periféricos</div>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label"><span class="spec-tier tier-min">MIN</span>Resolución</span>
+        <span class="spec-value">1366 × 768 px</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label"><span class="spec-tier tier-rec">REC</span>Resolución</span>
+        <span class="spec-value">1920 × 1080 (Full HD)</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label"><span class="spec-tier tier-min">MIN</span>Cámara web</span>
+        <span class="spec-value">VGA integrada</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label"><span class="spec-tier tier-rec">REC</span>Cámara web</span>
+        <span class="spec-value">HD 720p o superior</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label"><span class="spec-tier tier-min">MIN</span>Audio</span>
+        <span class="spec-value">Diadema con micrófono</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-wifi"></i></span>
+    Conectividad
+  </h2>
+  <div class="grid-2">
+    <div class="spec-card">
+      <div class="spec-card-header">
+        <div class="spec-icon"><i class="fa-solid fa-download"></i></div>
+        <div class="spec-title">Velocidad de internet</div>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label"><span class="spec-tier tier-min">MIN</span>Descarga</span>
+        <span class="spec-value">5 Mbps</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label"><span class="spec-tier tier-rec">REC</span>Descarga</span>
+        <span class="spec-value">25 Mbps o más</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label"><span class="spec-tier tier-min">MIN</span>Subida</span>
+        <span class="spec-value">2 Mbps</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label"><span class="spec-tier tier-rec">REC</span>Subida</span>
+        <span class="spec-value">10 Mbps o más</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Tipo de conexión</span>
+        <span class="spec-value">Cable / Fibra · 4G/5G</span>
+      </div>
+    </div>
+
+    <div class="spec-card">
+      <div class="spec-card-header">
+        <div class="spec-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+        <div class="spec-title">Dispositivos móviles (apoyo)</div>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Android</span>
+        <span class="spec-value">10 o superior</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">iOS</span>
+        <span class="spec-value">14 o superior</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">App Moodle</span>
+        <span class="spec-value">Última versión</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label" style="font-size: 8.5pt; font-style: italic;">Aviso: el móvil es apoyo. Algunas actividades requieren computador.</span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-window-restore"></i></span>
+    Software
+  </h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 25%;">Categoría</th>
+        <th style="width: 40%;">Mínimo</th>
+        <th style="width: 35%;">Recomendado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Sistema operativo</strong></td>
+        <td>Windows 10 / macOS 11 / Ubuntu 20.04</td>
+        <td>Windows 11 / macOS 13+ / Ubuntu 22.04+</td>
+      </tr>
+      <tr>
+        <td><strong>Navegador</strong></td>
+        <td>Chrome, Firefox, Edge (últimas 2 versiones)</td>
+        <td>Chrome o Firefox actualizado</td>
+      </tr>
+      <tr>
+        <td><strong>Ofimática</strong></td>
+        <td>LibreOffice / Google Workspace (gratuitos)</td>
+        <td>Microsoft 365 (gratis para estudiantes UFPS)</td>
+      </tr>
+      <tr>
+        <td><strong>PDF</strong></td>
+        <td>Visor web del navegador</td>
+        <td>Adobe Acrobat Reader DC</td>
+      </tr>
+      <tr>
+        <td><strong>Videoconferencia</strong></td>
+        <td>BigBlueButton (integrado en Moodle)</td>
+        <td>Google Meet / Zoom (apps instaladas)</td>
+      </tr>
+      <tr>
+        <td><strong>Compresión</strong></td>
+        <td>Herramienta nativa del SO</td>
+        <td>7-Zip (Windows) / The Unarchiver (macOS)</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-life-ring"></i></span>
+    Si no cumples con los requisitos
+  </h2>
+  <div class="grid-3">
+    <div class="card card-accent-azul">
+      <h3 class="card-title"><i class="fa-solid fa-building-columns"></i>Salas UFPS</h3>
+      <p>Las salas de cómputo del campus están disponibles para estudiantes virtuales en horario extendido.</p>
+    </div>
+    <div class="card card-accent-azul">
+      <h3 class="card-title"><i class="fa-solid fa-handshake-angle"></i>Bienestar Universitario</h3>
+      <p>Programas de apoyo socioeconómico que pueden facilitar acceso a equipo o conectividad.</p>
+    </div>
+    <div class="card card-accent-azul">
+      <h3 class="card-title"><i class="fa-solid fa-headset"></i>Soporte UVirtual</h3>
+      <p>Contacta a soporte para asesoría técnica personalizada y alternativas de acceso.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="doc-footer">
+  <span><span class="doc-footer-logo">UVirtual UFPS</span> · Requisitos Técnicos Mínimos</span>
+  <span>v. 1.0 · 2026 · Página 1 de 1</span>
+</footer>
+
+</div>
+
+</body>
+</html>

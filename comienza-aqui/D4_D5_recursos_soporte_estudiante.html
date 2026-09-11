@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Soporte al Estudiante — UVirtual UFPS</title>
+<link rel="stylesheet" href="fa/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+.service-card {
+  background: white;
+  border: 1px solid var(--ufps-gris-300);
+  border-left: 4px solid var(--ufps-rojo);
+  border-radius: 4px;
+  padding: 3mm 3.5mm;
+  font-size: 8.5pt;
+  height: 100%;
+}
+.service-icon {
+  width: 8mm;
+  height: 8mm;
+  background: var(--ufps-rojo);
+  color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10pt;
+  margin-bottom: 2mm;
+}
+.service-name {
+  font-weight: 700;
+  font-size: 10pt;
+  color: var(--ufps-negro);
+  margin-bottom: 1mm;
+}
+.service-channel {
+  background: var(--ufps-gris-50);
+  padding: 1.5mm 2.5mm;
+  border-radius: 4px;
+  font-size: 8pt;
+  margin-top: 1.5mm;
+  border-left: 3px solid var(--ufps-azul);
+}
+.service-channel strong { color: var(--ufps-azul); }
+.hour-badge {
+  display: inline-block;
+  background: var(--ufps-verde);
+  color: white;
+  padding: 1px 6px;
+  border-radius: 8px;
+  font-size: 7pt;
+  font-weight: 600;
+  margin-left: 4px;
+}
+.flowchart {
+  display: flex;
+  align-items: center;
+  gap: 1.5mm;
+  margin: 2mm 0;
+  flex-wrap: wrap;
+}
+.flow-step {
+  background: var(--ufps-rojo-superficie);
+  border: 1px solid var(--ufps-rojo-claro);
+  border-radius: 4px;
+  padding: 2mm 3mm;
+  font-size: 8.5pt;
+  font-weight: 600;
+  color: var(--ufps-rojo-hover);
+  flex: 1;
+  text-align: center;
+}
+.flow-arrow {
+  color: var(--ufps-rojo);
+  font-size: 12pt;
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+<header class="doc-header">
+  <span class="qm-tag">QM 7.1-7.4 · 3 Essential</span>
+  <div class="doc-header-meta">UFPS · Unidad de Educación Virtual · Documento Institucional</div>
+  <h1>Soporte al Estudiante</h1>
+  <p class="doc-header-subtitle">Servicios técnicos, académicos, de accesibilidad y bienestar disponibles para estudiantes virtuales UFPS</p>
+</header>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-headset"></i></span>
+    Soporte técnico <span class="wcag-badge">QM 7.1 Essential</span>
+  </h2>
+  <div class="grid-2">
+    <div class="service-card">
+      <div class="service-name"><i class="fa-solid fa-laptop-medical"></i> Mesa de Ayuda UVirtual</div>
+      <p>Problemas de acceso al aula, fallos de Moodle, configuración de cuenta, recuperación de contraseña, BigBlueButton/Guacamole.</p>
+      <div class="service-channel">
+        <strong>Canales:</strong> Tiledesk · soporte@uvirtual.ufps.edu.co · Foro de soporte
+      </div>
+      <div class="service-channel">
+        <strong>Horario:</strong> Lun-Vie 7:00-21:00 · Sáb 8:00-14:00
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-name"><i class="fa-solid fa-shield-halved"></i> Seguridad y privacidad</div>
+      <p>Reporte de incidentes de seguridad, sospecha de uso indebido de credenciales, brechas de privacidad de datos.</p>
+      <div class="service-channel">
+        <strong>Canal:</strong> seguridad@ufps.edu.co (oficina TIC institucional)
+      </div>
+      <div class="service-channel">
+        <strong>Respuesta:</strong> incidentes críticos en menos de 4 horas hábiles
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-universal-access"></i></span>
+    Accesibilidad y adaptaciones <span class="wcag-badge">QM 7.2 Essential</span>
+  </h2>
+  <div class="grid-2">
+    <div class="service-card">
+      <div class="service-name"><i class="fa-solid fa-hands-asl-interpreting"></i> Programa de Inclusión UFPS</div>
+      <p>Apoyo a estudiantes con discapacidad visual, auditiva, motora, cognitiva o condiciones de salud. Adaptaciones de materiales y evaluaciones.</p>
+      <div class="service-channel">
+        <strong>Canal:</strong> inclusion@ufps.edu.co · Bienestar Universitario
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-name"><i class="fa-solid fa-comment-medical"></i> Solicitar adaptaciones específicas</div>
+      <p>Estudiantes con condiciones declaradas piden directamente al docente: subtítulos, transcripciones, formatos, evaluaciones alternativas.</p>
+      <div class="service-channel">
+        <strong>Canal:</strong> mensajería Moodle al docente + copia al programa
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-graduation-cap"></i></span>
+    Servicios académicos <span class="wcag-badge">QM 7.3 Essential</span>
+  </h2>
+  <div class="grid-3">
+    <div class="service-card" style="border-left-color: var(--ufps-azul);">
+      <div class="service-name" style="font-size: 9pt;"><i class="fa-solid fa-book"></i> Biblioteca digital</div>
+      <p>Scopus, ScienceDirect, IEEE, SciELO, e-libros, gestores de citación.</p>
+      <div class="service-channel" style="font-size: 7.5pt;"><strong>biblioteca.ufps.edu.co</strong></div>
+    </div>
+    <div class="service-card" style="border-left-color: var(--ufps-azul);">
+      <div class="service-name" style="font-size: 9pt;"><i class="fa-solid fa-chalkboard-user"></i> Tutoría y escritura</div>
+      <p>Tutoría académica con pares + Centro de Escritura (APA/IEEE).</p>
+      <div class="service-channel" style="font-size: 7.5pt;"><strong>escritura@ufps.edu.co</strong></div>
+    </div>
+    <div class="service-card" style="border-left-color: var(--ufps-azul);">
+      <div class="service-name" style="font-size: 9pt;"><i class="fa-solid fa-flask"></i> Labs virtuales + FabLab</div>
+      <p>Acceso remoto a 32 máquinas vía Guacamole. FabLab Vivelab.</p>
+      <div class="service-channel" style="font-size: 7.5pt;"><strong>uvirtual.ufps.edu.co/labs</strong></div>
+    </div>
+  </div>
+</section>
+
+<footer class="doc-footer">
+  <span><span class="doc-footer-logo">UVirtual UFPS</span> · Soporte al Estudiante · Página 1 de 2</span>
+  <span>v. 1.0 · 2026</span>
+</footer>
+
+</div>
+
+<div class="page">
+
+<header class="doc-header">
+  <div class="doc-header-meta">UFPS · UVirtual · Soporte al Estudiante · Página 2</div>
+  <h1 style="font-size: 18pt;">Bienestar y flujo de atención</h1>
+</header>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-heart-pulse"></i></span>
+    Bienestar universitario y apoyo psicosocial <span class="wcag-badge">QM 7.4</span>
+  </h2>
+  <div class="grid-2">
+    <div class="service-card" style="border-left-color: var(--ufps-verde);">
+      <div class="service-name"><i class="fa-solid fa-brain"></i> Atención psicológica</div>
+      <p>Consultas individuales gratuitas para estudiantes activos. Apoyo en manejo de estrés, ansiedad, situaciones personales y académicas.</p>
+      <div class="service-channel"><strong>Canal:</strong> psicologia@ufps.edu.co · Citas presenciales o virtuales</div>
+      <div class="service-channel"><strong>Confidencialidad:</strong> garantizada según código deontológico</div>
+    </div>
+    <div class="service-card" style="border-left-color: var(--ufps-verde);">
+      <div class="service-name"><i class="fa-solid fa-hand-holding-dollar"></i> Apoyo socioeconómico</div>
+      <p>Programas de exención de matrícula, becas, créditos ICETEX, monitorías remuneradas, ayudas para conectividad.</p>
+      <div class="service-channel"><strong>Canal:</strong> bienestar@ufps.edu.co</div>
+      <div class="service-channel"><strong>Convocatorias:</strong> publicadas en uvirtual.ufps.edu.co cada semestre</div>
+    </div>
+    <div class="service-card" style="border-left-color: var(--ufps-verde);">
+      <div class="service-name"><i class="fa-solid fa-people-group"></i> Programas de pertenencia</div>
+      <p>Grupos estudiantiles, semilleros de investigación, actividades deportivas y culturales remotas o híbridas.</p>
+      <div class="service-channel"><strong>Canal:</strong> Oficina de Bienestar · Coordinaciones de programa</div>
+    </div>
+    <div class="service-card" style="border-left-color: var(--ufps-verde);">
+      <div class="service-name"><i class="fa-solid fa-shield"></i> Convivencia y respeto</div>
+      <p>Comité de Convivencia para reporte de acoso, discriminación, violencia basada en género. Protocolo confidencial.</p>
+      <div class="service-channel"><strong>Canal:</strong> convivencia@ufps.edu.co</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-route"></i></span>
+    Flujo de atención · ¿A dónde acudir?
+  </h2>
+  <div class="card" style="margin-bottom: 2mm;">
+    <h3 class="card-title"><i class="fa-solid fa-graduation-cap"></i>Asunto académico del curso (notas, contenidos, evaluaciones)</h3>
+    <div class="flowchart">
+      <div class="flow-step">1. Foro Cafetería del curso</div>
+      <span class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+      <div class="flow-step">2. Mensaje al docente</div>
+      <span class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+      <div class="flow-step">3. Coordinación del programa</div>
+    </div>
+  </div>
+  <div class="card" style="margin-bottom: 2mm;">
+    <h3 class="card-title"><i class="fa-solid fa-laptop"></i>Problema técnico de plataforma</h3>
+    <div class="flowchart">
+      <div class="flow-step">1. Auto-revisión guía técnica</div>
+      <span class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+      <div class="flow-step">2. Tiledesk UVirtual</div>
+      <span class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+      <div class="flow-step">3. soporte@uvirtual.ufps.edu.co</div>
+    </div>
+  </div>
+  <div class="card">
+    <h3 class="card-title"><i class="fa-solid fa-heart"></i>Situación personal, emocional o de bienestar</h3>
+    <div class="flowchart">
+      <div class="flow-step">1. Bienestar Universitario</div>
+      <span class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+      <div class="flow-step">2. Atención psicológica si procede</div>
+      <span class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+      <div class="flow-step">3. Acompañamiento integral</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">
+    <span class="icon-box"><i class="fa-solid fa-circle-question"></i></span>
+    Compromiso institucional UVirtual
+  </h2>
+  <div class="highlight">
+    <strong>Garantía de respuesta:</strong> toda solicitud al sistema de soporte UVirtual recibe acuse de recibo en menos de 24 horas hábiles y una resolución o ruta de escalamiento en menos de 5 días hábiles. Las solicitudes a coordinación de programa siguen los tiempos del Reglamento Estudiantil UFPS. Los derechos de petición se gestionan conforme a la Ley 1755 de 2015 (15 días hábiles).
+  </div>
+</section>
+
+<footer class="doc-footer">
+  <span><span class="doc-footer-logo">UVirtual UFPS</span> · Soporte al Estudiante</span>
+  <span>v. 1.0 · 2026 · Página 2 de 2</span>
+</footer>
+
+</div>
+
+</body>
+</html>
